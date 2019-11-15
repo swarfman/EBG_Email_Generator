@@ -1,14 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
-
-import { Home } from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
-import injectContext from "./store/appContext";
-
-import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
+import injectContext from "./store/appContext.jsx";
+import { Submit } from "./views/submit.jsx";
+import { PromoEmail } from "./views/st_promo_template.jsx";
+import { Home } from "./views/home-1.jsx";
 
 //create your first component
 export const Layout = () => {
@@ -17,17 +13,15 @@ export const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div className="d-flex flex-column h-100">
+		<div className="d-flex flex-column h-100 bg-dark">
 			<BrowserRouter>
 				<ScrollToTop>
-					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route path="/demo" component={Demo} />
-						<Route path="/single/:theid" component={Single} />
+						<Route exact path="/submit" component={Submit} />
+						<Route path="/promo-email" component={PromoEmail} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
-					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>

@@ -1,4 +1,5 @@
 //import react into the bundle
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -9,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../styles/index.scss";
 
 //import your own components
-import Layout from "./layout";
+import Layout from "./layout.jsx";
 
 //render your react application
 ReactDOM.render(<Layout />, document.querySelector("#app"));
