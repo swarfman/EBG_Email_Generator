@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/home.scss";
+import PropTypes from "prop-types";
 
 export class Home extends React.Component {
 	constructor() {
@@ -35,7 +36,21 @@ export class Home extends React.Component {
 						</form>
 					</div>
 				</div>
+				<div className="row d-flex justify-content-center pt-5">
+					<button
+						type="button"
+						className="col-6 btn btn-success justify-content-center text-white"
+						onClick={e => {
+							this.props.history.push("/dashboard");
+						}}>
+						Success
+					</button>
+				</div>
 			</div>
 		);
 	}
 }
+Home.propTypes = {
+	history: PropTypes.array,
+	push: PropTypes.func
+};

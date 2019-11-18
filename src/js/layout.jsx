@@ -5,6 +5,7 @@ import injectContext from "./store/appContext.jsx";
 import { Submit } from "./views/submit.jsx";
 import { PromoEmail } from "./views/st_promo_template.jsx";
 import { Home } from "./views/home-1.jsx";
+import { Dashboard } from "./views/dashboard.jsx";
 
 //create your first component
 export const Layout = () => {
@@ -18,6 +19,7 @@ export const Layout = () => {
 				<ScrollToTop>
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/submit" component={Submit} />
 						<Route path="/promo-email" component={PromoEmail} />
 						<Route render={() => <h1>Not found!</h1>} />
