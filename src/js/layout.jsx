@@ -4,8 +4,11 @@ import ScrollToTop from "./component/scrollToTop";
 import injectContext from "./store/appContext.jsx";
 import { Submit } from "./views/submit.jsx";
 import { PromoEmail } from "./views/st_promo_template.jsx";
-import { Home } from "./views/home-1.jsx";
+import { Login } from "./views/login.jsx";
 import { Dashboard } from "./views/dashboard.jsx";
+import { SignUp } from "./views/signup.jsx";
+import { EmailHistory } from "./views/emailHistory.jsx";
+import { Navbar } from "./component/navbar.jsx";
 
 //create your first component
 export const Layout = () => {
@@ -14,13 +17,15 @@ export const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div className="d-flex flex-column h-100 bg-dark">
+		<div className="d-flex flex-column bg-dark">
 			<BrowserRouter>
 				<ScrollToTop>
 					<Switch>
-						<Route exact path="/" component={Home} />
+						<Route exact path="/" component={Login} />
+						<Route exact path="/signup" component={SignUp} />
+						<Route exact path="/email-history" component={EmailHistory} />
 						<Route exact path="/dashboard" component={Dashboard} />
-						<Route exact path="/submit" component={Submit} />
+						<Route exact path="/ST-Promo-submit" component={Submit} />
 						<Route path="/promo-email" component={PromoEmail} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

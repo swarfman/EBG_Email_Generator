@@ -2,6 +2,7 @@ import React from "react";
 import { Context } from "../store/appContext.jsx";
 import PropTypes from "prop-types";
 import "babel-polyfill";
+import { Navbar } from "../component/navbar.jsx";
 
 export class Submit extends React.Component {
 	constructor() {
@@ -14,13 +15,13 @@ export class Submit extends React.Component {
 	}
 
 	subtextFunction = almostSubtext => {
-		console.log(almostSubtext.substring(13, 14));
-
 		if (almostSubtext.substring(11, 14) == " Me") {
 			return almostSubtext.substring(0, 11) + " Mezzanine";
 		} else if (almostSubtext.substring(0, 11) === "Receive Ass") {
 			return "Receive Assigned Seats";
 		} else if (almostSubtext.substring(11, 14) == " Sa") {
+			return "Buy Now and Save";
+		} else if (almostSubtext.substring(11, 14) == " sa") {
 			return "Buy Now and Save";
 		} else if (almostSubtext.substring(13, 14) == "<") {
 			return almostSubtext.substring(0, 13);
@@ -46,8 +47,11 @@ export class Submit extends React.Component {
 				webScrapeObject.URL = url;
 
 				var title = newResponse.match(/<h1 class="semi-bold h1">(.*?)<\/h1>/)[1];
-				console.log(title);
 				webScrapeObject.title = title;
+
+				// Adjust title in URL Google Analytics UTM tracking campaigns.
+				let URLTitle = title.replace(/ /g, "-");
+				webScrapeObject.URLTitle = URLTitle;
 
 				let regex = new RegExp('<span class="h5 promo-text semi-bold orange">(.*)</span>', "s");
 
@@ -55,20 +59,12 @@ export class Submit extends React.Component {
 
 				let subtext = this.subtextFunction(almostSubtext);
 				webScrapeObject.subtext = subtext;
-				console.log(webScrapeObject);
 
 				let almostPrice = newResponse.match(/<span class="price bold">(.*)<\/span>/)[1];
 				let price = almostPrice.substring(27, 30);
 
 				webScrapeObject.price = price;
 
-				// if (newResponse.match(/<img src="(.*)125x125.jpg"/)[1] != "") {
-				// 	webScrapeObject.imageAddress = "https://via.placeholder.com/300x140";
-				// } else {
-				// 	let almostImage = newResponse.match(/<img src="(.*)125x125.jpg"/)[1];
-				// 	let image = almostImage + "125x125.jpg";
-				// 	webScrapeObject.imageAddress = image;
-				// }
 				webScrapeObject.imageAddress = "https://via.placeholder.com/300x140";
 				console.log(webScrapeObject);
 				return webScrapeObject;
@@ -81,6 +77,7 @@ export class Submit extends React.Component {
 				{({ store, actions }) => {
 					return (
 						<div className="container-fluid">
+							<Navbar />
 							<div className="row mb-5 d-flex justify-content-center">
 								<div className="col-10 payNowForm text-white border">
 									<form>
@@ -102,204 +99,192 @@ export class Submit extends React.Component {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 											<div className="form-group col-md-6">
-												<label htmlFor="inputName">First Product Feature</label>
+												<label htmlFor="inputName">New York First Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product1"
-													placeholder="URL for First Product Feature"
+													placeholder="URL for New York's 1st Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 										</div>
 										<div className="form-row d-flex justify-content-between">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputAddress">Second Product Feature</label>
+												<label htmlFor="inputAddress">New York Second Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product2"
-													placeholder="URL for Second Product Feature"
+													placeholder="URL for NY 2nd Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPassword6">Third Product Feature</label>
+												<label htmlFor="inputPassword6">Vegas First Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product3"
-													placeholder="URL for Third Product Feature"
+													placeholder="URL for Vegas' 1st Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 										</div>
 										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Fourth Product Feature</label>
+												<label htmlFor="inputPhone4">Vegas Second Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product4"
-													placeholder="URL for 4th Product Feature"
+													placeholder="URL for Vegas' 2nd Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Fifth Product Feature</label>
+												<label htmlFor="inputPhone4">Vegas Third Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product5"
-													placeholder="URL for 5th Product Feature"
+													placeholder="URL for Vegas' 3rd Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 										</div>
 										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Sixth Product Feature</label>
+												<label htmlFor="inputPhone4">Orlando First Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product6"
-													placeholder="URL for 6th Product Feature"
+													placeholder="URL for Orlando's 1st Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Seventh Product Feature</label>
+												<label htmlFor="inputPhone4">Orlando Second Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product7"
-													placeholder="URL for 7th Product Feature"
+													placeholder="URL for Orlando's 2nd Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 										</div>
 										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">8th Product Feature</label>
+												<label htmlFor="inputPhone4">Recommended First Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product8"
-													placeholder="URL for 8th Product Feature"
+													placeholder="URL for Recommended 1st Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">9th Product Feature</label>
+												<label htmlFor="inputPhone4">Recommended Second Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product9"
-													placeholder="URL for 9th Product Feature"
+													placeholder="URL for Recommended 2nd Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 										</div>
 										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">10th Product Feature</label>
+												<label htmlFor="inputPhone4">Recommended Third Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product10"
-													placeholder="URL for 10th Product Feature"
+													placeholder="URL for Recommended 3rd Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">11th Product Feature</label>
+												<label htmlFor="inputPhone4">Recommended Fourth Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
 													id="product11"
-													placeholder="URL for 11th Product Feature"
+													placeholder="URL for Recommended 4th Product Feature"
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
 																actions.setURLInformation(scraped);
 															})
 														);
-														actions.getNameofProduct(e.target.value);
 													}}
 												/>
 											</div>

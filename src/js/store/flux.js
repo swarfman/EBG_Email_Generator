@@ -1,91 +1,72 @@
 import slashes from "slashes";
+import ls from "local-storage";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			URLs: [{}],
+			user: [{}],
 			storeProductNames: [{}],
 			imageURLs: [{}],
 			storeProductTitles: [{}],
 			STEmails: [{}]
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
-
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
-
-				//reset the global store
-				setStore({ demo: demo });
-			},
 			setURLInformation: e => {
 				var tempStore = getStore();
 				let landingPageInformation = {};
 				landingPageInformation = e;
 				tempStore.URLs.push(landingPageInformation);
-				console.log(tempStore);
 				setStore({ tempStore });
 			},
+			addUser: e => {
+				let newUser = {};
+				newUser = e;
 
-			getNameofProduct: e => {
-				let productNames = {};
+				fetch("http://127.0.0.1:5000/addUser", {
+					method: "POST",
+					body: JSON.stringify(newUser),
+					headers: {
+						"Content-Type": "application/json"
+					}
+				})
+					.then(res => {
+						return res.json();
+					})
+					.then(response => {
+						var tempStore = getStore();
 
-				//FOR LAS VEGAS URL CONDITIONS
-
-				//Get Vegas product name to search for image on search page
-				if (e.substring(7, 9) === "/l" && e.substring(33, 37) != "tour") {
-					let name = e.substring(33, 37);
-					productNames.productName = name;
-					//console.log(blogName);
-				} else if (e.substring(7, 9) === "/l" && e.substring(33, 37) === "tour") {
-					let name = e.substring(51, 56);
-					productNames.productName = name;
-				}
-
-				//NEW YORK URL CONDITIONS
-
-				if (e.substring(7, 9) === "/b" && e.substring(33, 41) != "new-york") {
-					let name = e.substring(33, 38);
-					productNames.productName = name;
-				} else if (e.substring(7, 9) === "/b" && e.substring(33, 41) === "new-york") {
-					let name = e.substring(60, 65);
-					productNames.productName = name;
-				}
-
-				//ORLANDO URL CONDITIONS
-
-				//GET ORLANDO BLOGNAME
-				if (e.substring(7, 9) === "/o") {
-					let name = e.substring(32, 37);
-					productNames.productName = name;
-				}
-
-				var tempStore = getStore();
-				tempStore.storeProductNames.push(productNames);
-				console.log(tempStore);
-				setStore({ tempStore });
+						tempStore.URLs.push(newUser);
+						setStore({ tempStore });
+					});
+			},
+			login: e => {
+				return fetch("http://127.0.0.1:5000/login", {
+					method: "POST",
+					body: JSON.stringify(e),
+					headers: {
+						"Content-Type": "application/json"
+					}
+				})
+					.then(res => {
+						return res.json();
+					})
+					.then(response => {
+						if (response.response != "ok") {
+							return false;
+						} else {
+							return true;
+						}
+					})
+					.catch(error => console.error("Error:", error));
 			},
 
-			sendSTEmailToAPI: email => {
-				console.log(email);
+			sendSTPromoEmailToAPI: email => {
+				//console.log(email);
 
 				let tempObject = {
-					name: "",
+					username: ls.get("username"),
+					email_type: "ST-Promo",
 					body: email
 				};
 
