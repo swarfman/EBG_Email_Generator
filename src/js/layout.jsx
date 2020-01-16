@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import injectContext from "./store/appContext.jsx";
 import { Submit } from "./views/submit.jsx";
+import { STEditorialSubmit } from "./views/stEditorialSubmit.jsx";
 import { PromoEmail } from "./views/st_promo_template.jsx";
+import { STEditorialEmail } from "./views/st_editorial_template.jsx";
 import { Login } from "./views/login.jsx";
 import { Dashboard } from "./views/dashboard.jsx";
 import { SignUp } from "./views/signup.jsx";
@@ -26,7 +28,9 @@ export const Layout = () => {
 						<Route exact path="/email-history" component={EmailHistory} />
 						<Route exact path="/dashboard" component={Dashboard} />
 						<Route exact path="/ST-Promo-submit" component={Submit} />
+						<Route exact path="/ST-Editorial-submit" component={STEditorialSubmit} />
 						<Route path="/promo-email" component={PromoEmail} />
+						<Route path="/ST-Editorial-Email" component={STEditorialEmail} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 				</ScrollToTop>

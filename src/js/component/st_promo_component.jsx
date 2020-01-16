@@ -66,82 +66,551 @@ export class PromoEmailComponent extends Component {
 							<div id="promo-email">
 								<html>
 									<head />
-									<table
-										border="0"
-										cellPadding="0"
-										cellSpacing="0"
-										width="100%"
-										className="section-padding">
-										<tr>
-											<td align="center" bgcolor="#F2F2F2">
-												<table
-													align="center"
-													border="0"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table"
-													width="600">
-													<tbody>
-														<tr>
-															<td align="center" valign="middle">
-																<table
-																	width="100%"
-																	border="0"
-																	align="center"
-																	cellPadding="0"
-																	cellSpacing="0">
-																	<tr>
-																		<td
+									<body>
+										<table
+											border="0"
+											cellPadding="0"
+											cellSpacing="0"
+											width="100%"
+											className="section-padding">
+											<tr>
+												<td align="center" bgcolor="#F2F2F2">
+													<table
+														align="center"
+														border="0"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table"
+														width="600">
+														<tbody>
+															<tr>
+																<td align="center" valign="middle">
+																	<table
+																		width="100%"
+																		border="0"
+																		align="center"
+																		cellPadding="0"
+																		cellSpacing="0">
+																		<tr>
+																			<td
+																				align="left"
+																				bgcolor="#000034"
+																				className="date"
+																				style={{
+																					padding: "10px",
+																					fontFamily: "Arial, sans-serif",
+																					color: "#ffffff",
+																					fontSize: "15px"
+																				}}
+																				valign="middle"
+																				width="50%">
+																				<strong>
+																					<cpt_date format="MONTH YYYY" />
+																				</strong>
+																			</td>
+																			<td
+																				align="right"
+																				bgcolor="#000034"
+																				className="mobile-hide"
+																				style={{ padding: "0 10px 0 0" }}
+																				valign="middle"
+																				width="50%">
+																				<table
+																					border="0"
+																					cellPadding="0"
+																					cellSpacing="0">
+																					<tr>
+																						<td
+																							align="right"
+																							style={{
+																								padding:
+																									"0 0 5px 0; fontSize: 10px",
+																								fontFamily:
+																									"Arial, sans-serif",
+																								color: "#515151",
+																								textDecoration: "none"
+																							}}>
+																							<span
+																								style={{
+																									fontFamily:
+																										"OpenSans",
+																									fontSize: "12px",
+																									style: "italic",
+																									height: "12px",
+																									color: "#ffffff",
+																									fontWeight: "400",
+																									textTransform:
+																										"scale(0.5,0.5)"
+																								}}
+																							/>
+																							<div className="Webview" />
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table
+											width="100%"
+											border="0"
+											align="center"
+											cellPadding="0"
+											cellSpacing="0"
+											className="section-padding">
+											<tr>
+												<td align="center" bgcolor="#f2f2f2">
+													<table
+														width="600"
+														border="0"
+														align="center"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table">
+														<td align="center" bgcolor="#FFFFFF">
+															<table
+																width="100%"
+																border="0"
+																align="center"
+																cellPadding="0"
+																cellSpacing="0">
+																<tr>
+																	<td
+																		style={{ padding: "0px" }}
+																		bgcolor="#ffffff"
+																		valign="middle">
+																		<table
 																			align="left"
-																			bgcolor="#000034"
-																			className="date"
-																			style={{
-																				padding: "10px",
-																				fontFamily: "Arial, sans-serif",
-																				color: "#ffffff",
-																				fontSize: "15px"
-																			}}
-																			valign="middle"
-																			width="50%">
-																			<strong>
-																				<cpt_date format="MONTH YYYY" />
-																			</strong>
-																		</td>
-																		<td
+																			border="0"
+																			cellPadding="0"
+																			cellSpacing="0"
+																			className="responsive-table"
+																			width="47%">
+																			<tr>
+																				<td
+																					align="center"
+																					valign="middle"
+																					style={{ padding: "20px 5px" }}>
+																					<a
+																						ALT=""
+																						DESCRIPTION="Logo-top"
+																						TARGET="_blank"
+																						href="https://www.showtickets.com/?utm_campaign=Logo-Top&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																						<img
+																							alt="Visit ShowTickets.com"
+																							height="auto"
+																							src="http://images.delivery.net/cm50content/20483/18489/show-tickets-logo.png"
+																							style={{
+																								display:
+																									"inline-inline-block"
+																							}}
+																							width="237"
+																						/>
+																					</a>
+																				</td>
+																			</tr>
+																		</table>
+
+																		<table
 																			align="right"
-																			bgcolor="#000034"
-																			className="mobile-hide"
-																			style={{ padding: "0 10px 0 0" }}
-																			valign="middle"
-																			width="50%">
+																			border="0"
+																			cellPadding="0"
+																			cellSpacing="0"
+																			className="responsive-table"
+																			width="47%">
+																			<tr>
+																				<td
+																					align="center"
+																					valign="middle"
+																					style={{ padding: "20px 0" }}>
+																					<table
+																						border="0"
+																						cellPadding="0"
+																						cellSpacing="0"
+																						style={{
+																							fontFamily: "'Lato', Arial",
+																							fontSize: "12px",
+																							fontWeight: "bold",
+																							color: "#000034",
+																							height: "22px",
+																							wordWrap: "break-word"
+																						}}
+																						width="90%">
+																						<tbody>
+																							<tr>
+																								<td align="center">
+																									<a
+																										ALT=""
+																										DESCRIPTION="Showtickets-Las-Vegas-Top-Nav"
+																										style={{
+																											textDecoration:
+																												"none",
+																											color:
+																												"#000034"
+																										}}
+																										href="https://lasvegas.showtickets.com/?utm_campaign=Showtickets-Las-Vegas-Top-Nav&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																										Las Vegas&#160;
+																										&gt;
+																									</a>
+																								</td>
+																								<td align="center">
+																									<a
+																										ALT=""
+																										DESCRIPTION="Showtickets-New-York-Top-Nav"
+																										style={{
+																											textDecoration:
+																												"none",
+																											color:
+																												"#000034"
+																										}}
+																										href="https://broadway.showtickets.com/?utm_campaign=Showtickets-New-York-Top-Nav&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																										New York&#160;
+																										&gt;
+																									</a>
+																								</td>
+																								<td align="center">
+																									<a
+																										ALT=""
+																										DESCRIPTION="Showtickets-Orlando-Top-Nav"
+																										style={{
+																											textDecoration:
+																												"none",
+																											color:
+																												"#000034"
+																										}}
+																										href="https://orlando.showtickets.com/?utm_campaign=Showtickets-Orlando-Top-Nav&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																										Orlando &#160;
+																										&gt;
+																									</a>
+																								</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table
+											border="0"
+											cellPadding="0"
+											cellSpacing="0"
+											width="100%"
+											className="section-padding">
+											<tr>
+												<td align="center" bgcolor="#F2F2F2">
+													<table
+														width="600"
+														border="0"
+														align="center"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table">
+														<tr>
+															<td align="center" valign="top" bgcolor="#FFFFFF">
+																<table
+																	border="0"
+																	cellPadding="0"
+																	cellSpacing="0"
+																	width="98%">
+																	<tr>
+																		<td>
 																			<table
 																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				width="100%">
+																				<tbody>
+																					<tr>
+																						<td>
+																							<table
+																								border="0"
+																								cellPadding="0"
+																								cellSpacing="0"
+																								width="100%">
+																								<tr>
+																									<td>
+																										<a
+																											ALT=""
+																											DESCRIPTION={
+																												store
+																													.URLs[1]
+																													.URLTitle
+																											}
+																											TARGET="_blank "
+																											href={
+																												store
+																													.URLs[1]
+																													.URL +
+																												"?utm_campaign=" +
+																												store
+																													.URLs[1]
+																													.URLTitle +
+																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																											}>
+																											<img
+																												alt="Don't Miss"
+																												border="0"
+																												className="img-max"
+																												height="auto"
+																												src="https://via.placeholder.com/300x140"
+																												style={{
+																													display:
+																														"block",
+																													padding:
+																														"0",
+																													color:
+																														"#515151",
+																													textDecoration:
+																														"none",
+																													fontFamily:
+																														"Helvetica, arial, sans-serif",
+																													fontSize:
+																														"15px; width: 600px; height: auto"
+																												}}
+																												width="600"
+																											/>
+																										</a>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<table
+																				width="98%"
+																				border="0"
+																				align="center"
 																				cellPadding="0"
 																				cellSpacing="0">
 																				<tr>
 																					<td
-																						align="right"
+																						className="mobile-wrapper"
 																						style={{
-																							padding:
-																								"0 0 5px 0; fontSize: 10px",
-																							fontFamily:
-																								"Arial, sans-serif",
-																							color: "#515151",
-																							textDecoration: "none"
-																						}}>
-																						<span
-																							style={{
-																								fontFamily: "OpenSans",
-																								fontSize: "12px",
-																								style: "italic",
-																								height: "12px",
-																								color: "#ffffff",
-																								fontWeight: "400",
-																								textTransform:
-																									"scale(0.5,0.5)"
-																							}}
-																						/>
-																						<div className="Webview" />
+																							padding: "15px 0 0 0"
+																						}}
+																						valign="top">
+																						<table
+																							align="left"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							className="responsive-table"
+																							width="74%">
+																							<tr>
+																								<td
+																									align="left"
+																									style={{
+																										color:
+																											"#000000",
+																										fontSize:
+																											"20px",
+																										fontFamily:
+																											"'Lato', Arial, Helvetica, sans-serif",
+																										fontWeight:
+																											"normal",
+																										textTransform:
+																											"uppercase",
+																										padding:
+																											"0 10px"
+																									}}>
+																									<strong>
+																										{
+																											store
+																												.URLs[1]
+																												.title
+																										}
+																									</strong>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="left"
+																									style={{
+																										color:
+																											"#000000",
+																										fontSize:
+																											"14px",
+																										fontFamily:
+																											"'Lato', Arial, Helvetica, sans-serif",
+																										fontWeight:
+																											"normal",
+																										padding: "10px"
+																									}}>
+																									<div>
+																										Lorem ipsum.
+																										Copy provided by
+																										content team.
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+																						<table
+																							align="right"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							className="responsive-table"
+																							width="24%">
+																							<tr>
+																								<td
+																									align="center"
+																									valign="middle">
+																									<table
+																										width="100%"
+																										border="0"
+																										align="center"
+																										cellPadding="0"
+																										cellSpacing="0">
+																										<tbody>
+																											<tr>
+																												<td
+																													align="center"
+																													style={{
+																														color:
+																															"#000034",
+																														fontSize:
+																															"14px",
+																														height:
+																															"20px",
+																														fontFamily:
+																															"'Lato', Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"bold;padding:0 0 5px 0"
+																													}}
+																													valign="middle">
+																													From
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													align="center"
+																													style={{
+																														color:
+																															"#000034",
+																														fontSize:
+																															"32px",
+																														height:
+																															"30px",
+																														fontFamily:
+																															"'Lato', Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"bold"
+																													}}>
+																													$
+																													{
+																														store
+																															.URLs[1]
+																															.price
+																													}
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									valign="middle"
+																									style={{
+																										padding:
+																											"10px 0"
+																									}}>
+																									<table
+																										width="50%"
+																										border="0"
+																										align="center"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										className="mobilebuttoncontainer">
+																										<tr>
+																											<td
+																												align="center"
+																												className="padding-copy"
+																												style={{
+																													padding:
+																														"0"
+																												}}>
+																												<table
+																													border="0"
+																													align="center"
+																													cellPadding="0"
+																													cellSpacing="0"
+																													className="responsive-table">
+																													<tr>
+																														<td align="center">
+																															<div className="hero-buy-now">
+																																<a
+																																	style={{
+																																		backgroundColor:
+																																			"#FB5724",
+
+																																		border:
+																																			"1px solid #FB5724",
+																																		borderRadius:
+																																			"3px",
+																																		color:
+																																			"#ffffff",
+																																		display:
+																																			"inline-block",
+																																		fontFamily:
+																																			"sans-serif",
+																																		fontSize:
+																																			"12px",
+																																		fontWeight:
+																																			"bold",
+																																		lineHeight:
+																																			"32px",
+																																		textAlign:
+																																			"center",
+																																		textDecoration:
+																																			"none",
+																																		width:
+																																			"150px",
+																																		WebKitTextSizeAdjust:
+																																			"none"
+																																	}}
+																																	href={
+																																		store
+																																			.URLs[1]
+																																			.URL +
+																																		"?utm_campaign=" +
+																																		store
+																																			.URLs[1]
+																																			.URLTitle +
+																																		"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																	}>
+																																	Buy
+																																	Tickets
+																																</a>
+																															</div>
+																														</td>
+																													</tr>
+																												</table>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
 																					</td>
 																				</tr>
 																			</table>
@@ -150,205 +619,799 @@ export class PromoEmailComponent extends Component {
 																</table>
 															</td>
 														</tr>
-													</tbody>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table
-										width="100%"
-										border="0"
-										align="center"
-										cellPadding="0"
-										cellSpacing="0"
-										className="section-padding">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<td align="center" bgcolor="#FFFFFF">
-														<table
-															width="100%"
-															border="0"
-															align="center"
-															cellPadding="0"
-															cellSpacing="0">
-															<tr>
-																<td
-																	style={{ padding: "0px" }}
-																	bgcolor="#ffffff"
-																	valign="middle">
-																	<table
-																		align="left"
-																		border="0"
-																		cellPadding="0"
-																		cellSpacing="0"
-																		className="responsive-table"
-																		width="47%">
-																		<tr>
-																			<td
-																				align="center"
-																				valign="middle"
-																				style={{ padding: "20px 5px" }}>
-																				<a
-																					ALT=""
-																					DESCRIPTION="Logo-top"
-																					TARGET="_blank"
-																					href="https://www.showtickets.com/?utm_campaign=Logo-Top&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																					<img
-																						alt="Visit ShowTickets.com"
-																						height="auto"
-																						src="http://images.delivery.net/cm50content/20483/18489/show-tickets-logo.png"
-																						style={{
-																							display:
-																								"inline-inline-block"
-																						}}
-																						width="237"
-																					/>
-																				</a>
-																			</td>
-																		</tr>
-																	</table>
+													</table>
+												</td>
+											</tr>
+										</table>
 
-																	<table
-																		align="right"
-																		border="0"
-																		cellPadding="0"
-																		cellSpacing="0"
-																		className="responsive-table"
-																		width="47%">
-																		<tr>
-																			<td
-																				align="center"
-																				valign="middle"
-																				style={{ padding: "20px 0" }}>
-																				<table
-																					border="0"
-																					cellPadding="0"
-																					cellSpacing="0"
-																					style={{
-																						fontFamily: "'Lato', Arial",
-																						fontSize: "12px",
-																						fontWeight: "bold",
-																						color: "#000034",
-																						height: "22px",
-																						wordWrap: "break-word"
-																					}}
-																					width="90%">
-																					<tbody>
-																						<tr>
-																							<td align="center">
-																								<a
-																									ALT=""
-																									DESCRIPTION="Showtickets-Las-Vegas-Top-Nav"
-																									style={{
-																										textDecoration:
-																											"none",
-																										color: "#000034"
-																									}}
-																									href="https://lasvegas.showtickets.com/?utm_campaign=Showtickets-Las-Vegas-Top-Nav&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																									Las Vegas&#160; &gt;
-																								</a>
-																							</td>
-																							<td align="center">
-																								<a
-																									ALT=""
-																									DESCRIPTION="Showtickets-New-York-Top-Nav"
-																									style={{
-																										textDecoration:
-																											"none",
-																										color: "#000034"
-																									}}
-																									href="https://broadway.showtickets.com/?utm_campaign=Showtickets-New-York-Top-Nav&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																									New York&#160; &gt;
-																								</a>
-																							</td>
-																							<td align="center">
-																								<a
-																									ALT=""
-																									DESCRIPTION="Showtickets-Orlando-Top-Nav"
-																									style={{
-																										textDecoration:
-																											"none",
-																										color: "#000034"
-																									}}
-																									href="https://orlando.showtickets.com/?utm_campaign=Showtickets-Orlando-Top-Nav&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																									Orlando &#160; &gt;
-																								</a>
-																							</td>
-																						</tr>
-																					</tbody>
-																				</table>
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table
-										border="0"
-										cellPadding="0"
-										cellSpacing="0"
-										width="100%"
-										className="section-padding">
-										<tr>
-											<td align="center" bgcolor="#F2F2F2">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<tr>
-														<td align="center" valign="top" bgcolor="#FFFFFF">
-															<table
-																border="0"
-																cellPadding="0"
-																cellSpacing="0"
-																width="98%">
-																<tr>
-																	<td>
-																		<table
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			width="100%">
-																			<tbody>
+										<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+											<tr>
+												<td align="center" bgcolor="#f2f2f2" className="section-padding">
+													<table
+														width="600"
+														border="0"
+														align="center"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table">
+														<tr>
+															<td bgcolor="#ffffff">
+																<table
+																	width="98%"
+																	border="0"
+																	align="center"
+																	cellPadding="0"
+																	cellSpacing="0">
+																	<tr>
+																		<td
+																			align="left"
+																			style={{
+																				fontFamily: "'Lato', Arial",
+																				fontSize: "16px",
+																				color: "#ffffff",
+																				wordWrap: "break-word",
+																				textTransform: "uppercase",
+																				padding: "10px"
+																			}}
+																			valign="top"
+																			bgcolor="#000034"
+																			className="City">
+																			<strong>New York</strong>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td
+																			className="mobile-wrapper"
+																			style={{
+																				padding: "0",
+																				borderBottom: "solid 1px #cecece"
+																			}}
+																			valign="bottom">
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="47%">
 																				<tr>
-																					<td>
+																					<td
+																						style={{ padding: "0px 0" }}
+																						valign="bottom">
 																						<table
+																							align="left"
 																							border="0"
 																							cellPadding="0"
 																							cellSpacing="0"
 																							width="100%">
 																							<tr>
-																								<td>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
 																									<a
 																										ALT=""
 																										DESCRIPTION={
 																											store
-																												.URLs[1]
+																												.URLs[2]
 																												.URLTitle
 																										}
-																										TARGET="_blank "
+																										TARGET="_blank"
 																										href={
 																											store
-																												.URLs[1]
+																												.URLs[2]
 																												.URL +
 																											"?utm_campaign=" +
 																											store
-																												.URLs[1]
+																												.URLs[2]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/300x140"
+																											style={{
+																												display:
+																													"inline-block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="276"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="right"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="47%">
+																				<tr>
+																					<td
+																						align="left"
+																						className="productcell"
+																						valign="top">
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							style={{
+																								collapse: "collapse"
+																							}}
+																							width="100%">
+																							<tbody>
+																								<tr>
+																									<td
+																										align="left"
+																										className="productcell"
+																										style={{
+																											color:
+																												"#000000",
+																											fontSize:
+																												"15px",
+																											fontFamily:
+																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																											fontWeight:
+																												"normal;padding: 10px 0 10px 0"
+																										}}>
+																										<strong>
+																											{
+																												store
+																													.URLs[2]
+																													.title
+																											}
+																										</strong>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td
+																										align="left"
+																										className="font16"
+																										style={{
+																											color:
+																												"#fc1d12",
+																											fontSize:
+																												"15px",
+																											fontFamily:
+																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																											fontWeight:
+																												"normal",
+																											padding:
+																												"0 0 10px 0"
+																										}}>
+																										{
+																											store
+																												.URLs[2]
+																												.subtext
+																										}
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="left"
+																						className="productcell"
+																						valign="bottom">
+																						<table
+																							align="right"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							className="responsive-table"
+																							width="20%">
+																							<tr>
+																								<td
+																									align="right"
+																									className="font16"
+																									colSpan="2"
+																									style={{
+																										color:
+																											"#000034",
+																										fontSize:
+																											"15px",
+																										fontFamily:
+																											"'Lato', Arial, Helvetica, sans-serif",
+																										fontWeight:
+																											"normal",
+																										textTransform:
+																											"none",
+																										padding:
+																											"0 10px 0 0"
+																									}}>
+																									<strong>
+																										<em
+																											style={{
+																												fontFamily:
+																													"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																											}}>
+																											from
+																										</em>{" "}
+																										$
+																										{
+																											store
+																												.URLs[2]
+																												.price
+																										}
+																									</strong>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="productcell"
+																									style={{
+																										padding:
+																											"12px 0 0 0",
+																										fontFamily:
+																											"Arial, sans-serif",
+																										color:
+																											"#333333",
+																										fontSize: "15px"
+																									}}>
+																									<table
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										className="productcell"
+																										width="20%">
+																										<tr>
+																											<td
+																												align="center"
+																												style={{
+																													padding:
+																														"0"
+																												}}>
+																												<table
+																													border="0"
+																													cellPadding="0"
+																													cellSpacing="0"
+																													className="responsive-table">
+																													<tr>
+																														<td align="center">
+																															<div className="microsoft-styling-buy-now">
+																																<a
+																																	style={{
+																																		backgroundColor:
+																																			"#FB5724",
+
+																																		border:
+																																			"1px solid #FB5724",
+																																		borderRadius:
+																																			"3px",
+																																		color:
+																																			"#ffffff",
+																																		display:
+																																			"inline-block",
+																																		fontFamily:
+																																			"sans-serif",
+																																		fontSize:
+																																			"12px",
+																																		fontWeight:
+																																			"bold",
+																																		lineHeight:
+																																			"32px",
+																																		textAlign:
+																																			"center",
+																																		textDecoration:
+																																			"none",
+																																		width:
+																																			"90px",
+																																		WebKitTextSizeAdjust:
+																																			"none"
+																																	}}
+																																	href={
+																																		store
+																																			.URLs[2]
+																																			.URL +
+																																		"?utm_campaign=" +
+																																		store
+																																			.URLs[2]
+																																			.URLTitle +
+																																		"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																	}>
+																																	Buy
+																																	Tickets
+																																</a>
+																															</div>
+																														</td>
+																													</tr>
+																												</table>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="left"
+																						className="productcell"
+																						valign="bottom">
+																						&#160;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td className="mobile-hide">&#160; </td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td bgcolor="#ffffff">
+																<table
+																	align="center"
+																	border="0"
+																	cellPadding="0"
+																	cellSpacing="0"
+																	width="98%">
+																	<tr>
+																		<td className="mobile-hide">&#160; </td>
+																	</tr>
+																	<tr>
+																		<td className="mobile-wrapper" valign="bottom">
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="47%">
+																				<tr>
+																					<td
+																						style={{ padding: "0px 0" }}
+																						valign="bottom">
+																						<table
+																							align="left"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									className="productcell"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[3]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[3]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[3]
+																												.title +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/300x140"
+																											style={{
+																												display:
+																													"inline-block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="276"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="right"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="47%">
+																				<tr>
+																					<td
+																						align="left"
+																						className="productcell"
+																						valign="top">
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							style={{
+																								collapse: "collapse"
+																							}}
+																							width="100%">
+																							<tbody>
+																								<tr>
+																									<td
+																										align="left"
+																										className="productcell"
+																										style={{
+																											color:
+																												"#000000",
+																											fontSize:
+																												"15px",
+																											fontFamily:
+																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																											fontWeight:
+																												"normal",
+																											padding:
+																												"10px 0 10px 0"
+																										}}>
+																										<strong>
+																											{
+																												store
+																													.URLs[3]
+																													.title
+																											}
+																										</strong>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td
+																										align="left"
+																										className="font16"
+																										style={{
+																											color:
+																												"#fc1d12",
+																											fontSize:
+																												"15px",
+																											fontFamily:
+																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																											fontWeight:
+																												"normal",
+																											padding:
+																												"0 0 10px 0"
+																										}}>
+																										{
+																											store
+																												.URLs[3]
+																												.subtext
+																										}
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="left"
+																						className="productcell"
+																						valign="bottom">
+																						<table
+																							align="right"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							className="responsive-table"
+																							width="20%">
+																							<tr>
+																								<td
+																									align="right"
+																									className="font16"
+																									colSpan="2"
+																									style={{
+																										color:
+																											"#000034",
+																										fontSize:
+																											"15px",
+																										fontFamily:
+																											"'Lato', Arial, Helvetica, sans-serif",
+																										fontWeight:
+																											"normal",
+																										textTransform:
+																											"none",
+																										padding:
+																											"0 10px 0 0"
+																									}}>
+																									<strong>
+																										<em
+																											style={{
+																												fontFamily:
+																													"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																											}}>
+																											from
+																										</em>{" "}
+																										$
+																										{
+																											store
+																												.URLs[3]
+																												.price
+																										}
+																									</strong>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="productcell"
+																									style={{
+																										padding:
+																											"12px 0 0 0",
+																										fontFamily:
+																											"Arial, sans-serif",
+																										color:
+																											"#333333",
+																										fontSize: "15px"
+																									}}>
+																									<table
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										className="productcell"
+																										width="20%">
+																										<tr>
+																											<td
+																												align="center"
+																												style={{
+																													padding:
+																														"0"
+																												}}>
+																												<table
+																													border="0"
+																													cellPadding="0"
+																													cellSpacing="0"
+																													className="responsive-table">
+																													<tr>
+																														<td align="center">
+																															<div className="microsoft-styling-buy-now">
+																																<a
+																																	style={{
+																																		backgroundColor:
+																																			"#FB5724",
+																																		border:
+																																			"1px solid #FB5724",
+																																		borderRadius:
+																																			"3px",
+																																		color:
+																																			"#ffffff",
+																																		display:
+																																			"inline-block",
+																																		fontFamily:
+																																			"sans-serif",
+																																		fontSize:
+																																			"12px",
+																																		fontWeight:
+																																			"bold",
+																																		lineHeight:
+																																			"32px",
+																																		textAlign:
+																																			"center",
+																																		textDecoration:
+																																			"none",
+																																		width:
+																																			"90px",
+																																		WebKitTextSizeAdjust:
+																																			"none"
+																																	}}
+																																	href={
+																																		store
+																																			.URLs[3]
+																																			.URL +
+																																		"?utm_campaign=" +
+																																		store
+																																			.URLs[3]
+																																			.URLTitle +
+																																		"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																	}>
+																																	Buy
+																																	Tickets
+																																</a>
+																															</div>
+																														</td>
+																													</tr>
+																												</table>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="left"
+																						className="productcell"
+																						valign="bottom">
+																						&#160;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td className="mobile-hide">&#160; </td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table
+											border="0"
+											cellPadding="0"
+											cellSpacing="0"
+											width="100%"
+											className="section-padding">
+											<tbody>
+												<tr>
+													<td align="center" bgcolor="#f2f2f2" className="section-padding">
+														<table
+															width="600"
+															border="0"
+															align="center"
+															cellPadding="0"
+															cellSpacing="0"
+															className="responsive-table">
+															<tbody
+																width="600"
+																border="0"
+																align="center"
+																cellPadding="0"
+																cellSpacing="0"
+																className="responsive-table">
+																<tr>
+																	<td bgcolor="#ffffff">
+																		<table
+																			width="600"
+																			border="0"
+																			align="center"
+																			cellPadding="0"
+																			cellSpacing="0"
+																			className="responsive-table">
+																			<tbody
+																				width="600"
+																				border="0"
+																				align="center"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table">
+																				<tr>
+																					<td>&#160;</td>
+																				</tr>
+																				<tr>
+																					<td>&#160;</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<table
+											border="0"
+											cellPadding="0"
+											cellSpacing="0"
+											width="100%"
+											className="section-padding">
+											<tr>
+												<td align="center" bgcolor="#f2f2f2" className="section-padding">
+													<table
+														width="600"
+														border="0"
+														align="center"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table">
+														<tr>
+															<td bgcolor="#ffffff">
+																<table
+																	align="center"
+																	border="0"
+																	cellPadding="0"
+																	cellSpacing="0"
+																	width="98%">
+																	<tr>
+																		<td
+																			align="left"
+																			bgcolor="#000034"
+																			style={{
+																				fontFamily: "'Lato', Arial",
+																				fontSize: "16px",
+																				color: "#ffffff",
+																				wordWrap: "break-word",
+																				textTransform: "uppercase",
+																				padding: "10px"
+																			}}
+																			valign="top"
+																			className="City">
+																			<strong>Las Vegas</strong>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td
+																			className="mobile-wrapper"
+																			style={{ padding: "0" }}
+																			valign="top">
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="33%">
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[4]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[4]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[4]
 																												.URLTitle +
 																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																										}>
@@ -361,895 +1424,818 @@ export class PromoEmailComponent extends Component {
 																											style={{
 																												display:
 																													"block",
-																												padding:
-																													"0",
 																												color:
 																													"#515151",
-																												textDecoration:
-																													"none",
 																												fontFamily:
 																													"Helvetica, arial, sans-serif",
 																												fontSize:
-																													"15px; width: 600px; height: auto"
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
 																											}}
-																											width="600"
+																											width="180"
 																										/>
 																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										width="98%">
+																										<tbody>
+																											<tr>
+																												<td align="left">
+																													<table
+																														align="center"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														style={{
+																															collapse:
+																																"collapse"
+																														}}
+																														width="100%">
+																														<tbody>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="productcell"
+																																	style={{
+																																		color:
+																																			"#000000",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"10px 0 10px 0"
+																																	}}>
+																																	<strong>
+																																		{
+																																			store
+																																				.URLs[4]
+																																				.title
+																																		}
+																																	</strong>
+																																</td>
+																															</tr>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="font16"
+																																	style={{
+																																		color:
+																																			"#fc1d12",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"0 0 10px 0"
+																																	}}>
+																																	{
+																																		store
+																																			.URLs[4]
+																																			.subtext
+																																	}
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table>
+																													<table
+																														align="right"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														className="responsive-table"
+																														width="20%">
+																														<tr>
+																															<td
+																																align="right"
+																																className="font16"
+																																colSpan="2"
+																																style={{
+																																	color:
+																																		"#000034",
+																																	fontSize:
+																																		"15px; fontFamily:'Lato', Arial, Helvetica, sans-serif",
+																																	fontWeight:
+																																		"normal",
+																																	textTransform:
+																																		"none",
+																																	padding:
+																																		"0 10px 0 0"
+																																}}>
+																																<strong>
+																																	<em
+																																		style={{
+																																			fontFamily:
+																																				"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																		}}>
+																																		from
+																																	</em>{" "}
+																																	$
+																																	{
+																																		store
+																																			.URLs[4]
+																																			.price
+																																	}
+																																</strong>
+																															</td>
+																														</tr>
+																														<tr>
+																															<td
+																																align="center"
+																																style={{
+																																	padding:
+																																		"12px 0 0 0",
+																																	fontFamily:
+																																		"Arial, sans-serif",
+																																	color:
+																																		"#333333",
+																																	fontSize:
+																																		"15px"
+																																}}>
+																																<table
+																																	border="0"
+																																	cellPadding="0"
+																																	cellSpacing="0"
+																																	className="mobile-button-container"
+																																	width="20%">
+																																	<tr>
+																																		<td
+																																			align="center"
+																																			style={{
+																																				padding:
+																																					"0"
+																																			}}>
+																																			<table
+																																				border="0"
+																																				cellPadding="0"
+																																				cellSpacing="0"
+																																				className="responsive-table">
+																																				<tr>
+																																					<td align="center">
+																																						<div className="microsoft-styling-buy-now">
+																																							<a
+																																								style={{
+																																									backgroundColor:
+																																										"#FB5724",
+																																									border:
+																																										"1px solid #FB5724",
+																																									borderRadius:
+																																										"3px",
+																																									color:
+																																										"#ffffff",
+																																									display:
+																																										"inline-block",
+																																									fontFamily:
+																																										"sans-serif",
+																																									fontSize:
+																																										"12px",
+																																									fontWeight:
+																																										"bold",
+																																									lineHeight:
+																																										"32px",
+																																									textAlign:
+																																										"center",
+																																									textDecoration:
+																																										"none",
+																																									width:
+																																										"90px",
+																																									WebKitTextSizeAdjust:
+																																										"none"
+																																								}}
+																																								href={
+																																									store
+																																										.URLs[4]
+																																										.URL +
+																																									"?utm_campaign=" +
+																																									store
+																																										.URLs[4]
+																																										.URLTitle +
+																																									"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																								}>
+																																								Buy
+																																								Tickets
+																																							</a>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</table>
+																																		</td>
+																																	</tr>
+																																</table>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
 																								</td>
 																							</tr>
 																						</table>
 																					</td>
 																				</tr>
-																			</tbody>
-																		</table>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<table
-																			width="98%"
-																			border="0"
-																			align="center"
-																			cellPadding="0"
-																			cellSpacing="0">
-																			<tr>
-																				<td
-																					className="mobile-wrapper"
-																					style={{ padding: "15px 0 0 0" }}
-																					valign="top">
-																					<table
-																						align="left"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						className="responsive-table"
-																						width="74%">
-																						<tr>
-																							<td
-																								align="left"
-																								style={{
-																									color: "#000000",
-																									fontSize: "20px",
-																									fontFamily:
-																										"'Lato', Arial, Helvetica, sans-serif",
-																									fontWeight:
-																										"normal",
-																									textTransform:
-																										"uppercase",
-																									padding: "0 10px"
-																								}}>
-																								<strong>
-																									{
-																										store.URLs[1]
-																											.title
-																									}
-																								</strong>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="left"
-																								style={{
-																									color: "#000000",
-																									fontSize: "14px",
-																									fontFamily:
-																										"'Lato', Arial, Helvetica, sans-serif",
-																									fontWeight:
-																										"normal",
-																									padding: "10px"
-																								}}>
-																								<div>
-																									Lorem ipsum. Copy
-																									provided by content
-																									team.
-																								</div>
-																							</td>
-																						</tr>
-																					</table>
-																					<table
-																						align="right"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						className="responsive-table"
-																						width="24%">
-																						<tr>
-																							<td
-																								align="center"
-																								valign="middle">
-																								<table
-																									width="100%"
-																									border="0"
-																									align="center"
-																									cellPadding="0"
-																									cellSpacing="0">
-																									<tbody>
-																										<tr>
-																											<td
-																												align="center"
-																												style={{
-																													color:
-																														"#000034",
-																													fontSize:
-																														"14px",
-																													height:
-																														"20px",
-																													fontFamily:
-																														"'Lato', Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"bold;padding:0 0 5px 0"
-																												}}
-																												valign="middle">
-																												From
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												align="center"
-																												style={{
-																													color:
-																														"#000034",
-																													fontSize:
-																														"32px",
-																													height:
-																														"30px",
-																													fontFamily:
-																														"'Lato', Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"bold"
-																												}}>
-																												$
-																												{
-																													store
-																														.URLs[1]
-																														.price
-																												}
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								valign="middle"
-																								style={{
-																									padding: "10px 0"
-																								}}>
-																								<table
-																									width="50%"
-																									border="0"
-																									align="center"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									className="mobilebuttoncontainer">
-																									<tr>
-																										<td
-																											align="center"
-																											className="padding-copy"
-																											style={{
-																												padding:
-																													"0"
-																											}}>
-																											<table
-																												border="0"
-																												align="center"
-																												cellPadding="0"
-																												cellSpacing="0"
-																												className="responsive-table">
-																												<tr>
-																													<td align="center">
-																														<div className="hero-buy-now">
-																															<a
-																																style={{
-																																	backgroundColor:
-																																		"#FB5724",
-
-																																	border:
-																																		"1px solid #FB5724",
-																																	borderRadius:
-																																		"3px",
-																																	color:
-																																		"#ffffff",
-																																	display:
-																																		"inline-block",
-																																	fontFamily:
-																																		"sans-serif",
-																																	fontSize:
-																																		"12px",
-																																	fontWeight:
-																																		"bold",
-																																	lineHeight:
-																																		"32px",
-																																	textAlign:
-																																		"center",
-																																	textDecoration:
-																																		"none",
-																																	width:
-																																		"150px",
-																																	WebKitTextSizeAdjust:
-																																		"none"
-																																}}
-																																href={
-																																	store
-																																		.URLs[1]
-																																		.URL +
-																																	"?utm_campaign=" +
-																																	store
-																																		.URLs[1]
-																																		.URLTitle +
-																																	"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																}>
-																																Buy
-																																Tickets
-																															</a>
-																														</div>
-																													</td>
-																												</tr>
-																											</table>
-																										</td>
-																									</tr>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-
-									<table border="0" cellPadding="0" cellSpacing="0" width="100%">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2" className="section-padding">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<tr>
-														<td bgcolor="#ffffff">
-															<table
-																width="98%"
-																border="0"
-																align="center"
-																cellPadding="0"
-																cellSpacing="0">
-																<tr>
-																	<td
-																		align="left"
-																		style={{
-																			fontFamily: "'Lato', Arial",
-																			fontSize: "16px",
-																			color: "#ffffff",
-																			wordWrap: "break-word",
-																			textTransform: "uppercase",
-																			padding: "10px"
-																		}}
-																		valign="top"
-																		bgcolor="#000034"
-																		className="City">
-																		<strong>New York</strong>
-																	</td>
-																</tr>
-																<tr>
-																	<td
-																		className="mobile-wrapper"
-																		style={{
-																			padding: "0",
-																			borderBottom: "solid 1px #cecece"
-																		}}
-																		valign="bottom">
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="47%">
-																			<tr>
-																				<td
-																					style={{ padding: "0px 0" }}
-																					valign="bottom">
-																					<table
-																						align="left"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[2]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[2]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[2]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"inline-block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
-																										}}
-																										width="276"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="right"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="47%">
-																			<tr>
-																				<td
-																					align="left"
-																					className="productcell"
-																					valign="top">
-																					<table
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="33%">
+																				<tr>
+																					<td
 																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						style={{
-																							collapse: "collapse"
-																						}}
-																						width="100%">
-																						<tbody>
-																							<tr>
-																								<td
-																									align="left"
-																									className="productcell"
-																									style={{
-																										color:
-																											"#000000",
-																										fontSize:
-																											"15px",
-																										fontFamily:
-																											"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																										fontWeight:
-																											"normal;padding: 10px 0 10px 0"
-																									}}>
-																									<strong>
-																										{
-																											store
-																												.URLs[2]
-																												.title
-																										}
-																									</strong>
-																								</td>
-																							</tr>
-																							<tr>
-																								<td
-																									align="left"
-																									className="font16"
-																									style={{
-																										color:
-																											"#fc1d12",
-																										fontSize:
-																											"15px",
-																										fontFamily:
-																											"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																										fontWeight:
-																											"normal",
-																										padding:
-																											"0 0 10px 0"
-																									}}>
-																									{
-																										store.URLs[2]
-																											.subtext
-																									}
-																								</td>
-																							</tr>
-																						</tbody>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="left"
-																					className="productcell"
-																					valign="bottom">
-																					<table
-																						align="right"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						className="responsive-table"
-																						width="20%">
-																						<tr>
-																							<td
-																								align="right"
-																								className="font16"
-																								colSpan="2"
-																								style={{
-																									color: "#000034",
-																									fontSize: "15px",
-																									fontFamily:
-																										"'Lato', Arial, Helvetica, sans-serif",
-																									fontWeight:
-																										"normal",
-																									textTransform:
-																										"none",
-																									padding:
-																										"0 10px 0 0"
-																								}}>
-																								<strong>
-																									<em
-																										style={{
-																											fontFamily:
-																												"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																										}}>
-																										from
-																									</em>{" "}
-																									$
-																									{
-																										store.URLs[2]
-																											.price
-																									}
-																								</strong>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="productcell"
-																								style={{
-																									padding:
-																										"12px 0 0 0",
-																									fontFamily:
-																										"Arial, sans-serif",
-																									color: "#333333",
-																									fontSize: "15px"
-																								}}>
-																								<table
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									className="productcell"
-																									width="20%">
-																									<tr>
-																										<td
-																											align="center"
-																											style={{
-																												padding:
-																													"0"
-																											}}>
-																											<table
-																												border="0"
-																												cellPadding="0"
-																												cellSpacing="0"
-																												className="responsive-table">
-																												<tr>
-																													<td align="center">
-																														<div className="microsoft-styling-buy-now">
-																															<a
-																																style={{
-																																	backgroundColor:
-																																		"#FB5724",
-
-																																	border:
-																																		"1px solid #FB5724",
-																																	borderRadius:
-																																		"3px",
-																																	color:
-																																		"#ffffff",
-																																	display:
-																																		"inline-block",
-																																	fontFamily:
-																																		"sans-serif",
-																																	fontSize:
-																																		"12px",
-																																	fontWeight:
-																																		"bold",
-																																	lineHeight:
-																																		"32px",
-																																	textAlign:
-																																		"center",
-																																	textDecoration:
-																																		"none",
-																																	width:
-																																		"90px",
-																																	WebKitTextSizeAdjust:
-																																		"none"
-																																}}
-																																href={
-																																	store
-																																		.URLs[2]
-																																		.URL +
-																																	"?utm_campaign=" +
-																																	store
-																																		.URLs[2]
-																																		.URLTitle +
-																																	"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																}>
-																																Buy
-																																Tickets
-																															</a>
-																														</div>
-																													</td>
-																												</tr>
-																											</table>
-																										</td>
-																									</tr>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="left"
-																					className="productcell"
-																					valign="bottom">
-																					&#160;
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-																<tr>
-																	<td className="mobile-hide">&#160; </td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#ffffff">
-															<table
-																align="center"
-																border="0"
-																cellPadding="0"
-																cellSpacing="0"
-																width="98%">
-																<tr>
-																	<td className="mobile-hide">&#160; </td>
-																</tr>
-																<tr>
-																	<td className="mobile-wrapper" valign="bottom">
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="47%">
-																			<tr>
-																				<td
-																					style={{ padding: "0px 0" }}
-																					valign="bottom">
-																					<table
-																						align="left"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								className="productcell"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[3]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[3]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[3]
-																											.title +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"inline-block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
-																										}}
-																										width="276"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="right"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="47%">
-																			<tr>
-																				<td
-																					align="left"
-																					className="productcell"
-																					valign="top">
-																					<table
+																						style={{ padding: "0px" }}>
+																						&nbsp;
+																					</td>
+																					<td
 																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						style={{
-																							collapse: "collapse"
-																						}}
-																						width="100%">
-																						<tbody>
+																						style={{ padding: "0px" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
 																							<tr>
 																								<td
 																									align="left"
-																									className="productcell"
-																									style={{
-																										color:
-																											"#000000",
-																										fontSize:
-																											"15px",
-																										fontFamily:
-																											"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																										fontWeight:
-																											"normal",
-																										padding:
-																											"10px 0 10px 0"
-																									}}>
-																									<strong>
-																										{
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
 																											store
-																												.URLs[3]
-																												.title
+																												.URLs[5]
+																												.URLTitle
 																										}
-																									</strong>
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[5]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[5]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/300x140"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="180"
+																										/>
+																									</a>
 																								</td>
 																							</tr>
 																							<tr>
 																								<td
-																									align="left"
-																									className="font16"
-																									style={{
-																										color:
-																											"#fc1d12",
-																										fontSize:
-																											"15px",
-																										fontFamily:
-																											"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																										fontWeight:
-																											"normal",
-																										padding:
-																											"0 0 10px 0"
-																									}}>
-																									{
-																										store.URLs[3]
-																											.subtext
-																									}
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										width="98%">
+																										<tbody>
+																											<tr>
+																												<td align="left">
+																													<table
+																														align="center"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														style={{
+																															borderCollapse:
+																																"collapse"
+																														}}
+																														width="100%">
+																														<tbody>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="productcell"
+																																	style={{
+																																		color:
+																																			"#000000",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"10px 0 10px 0"
+																																	}}>
+																																	<strong>
+																																		{
+																																			store
+																																				.URLs[5]
+																																				.title
+																																		}
+																																	</strong>
+																																</td>
+																															</tr>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="font16"
+																																	style={{
+																																		color:
+																																			"#fc1d12",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"0 0 10px 0"
+																																	}}>
+																																	{
+																																		store
+																																			.URLs[5]
+																																			.subtext
+																																	}
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table>
+																													<table
+																														align="right"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														className="responsive-table"
+																														width="20%">
+																														<tr>
+																															<td
+																																align="right"
+																																className="font16"
+																																colSpan="2"
+																																style={{
+																																	color:
+																																		"#000034",
+																																	fontSize:
+																																		"15px",
+																																	fontFamily:
+																																		"'Lato', Arial, Helvetica, sans-serif",
+																																	fontWeight:
+																																		"normal",
+																																	textTransform:
+																																		"none",
+																																	padding:
+																																		"0 10px 0 0"
+																																}}>
+																																<strong>
+																																	<em
+																																		style={{
+																																			fontFamily:
+																																				"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																		}}>
+																																		from
+																																	</em>{" "}
+																																	$
+																																	{
+																																		store
+																																			.URLs[5]
+																																			.price
+																																	}
+																																</strong>
+																															</td>
+																														</tr>
+																														<tr>
+																															<td
+																																align="center"
+																																style={{
+																																	padding:
+																																		"12px 0 0 0",
+																																	fontFamily:
+																																		"Arial, sans-serif",
+																																	color:
+																																		"#333333; fontSize: 15px"
+																																}}>
+																																<table
+																																	border="0"
+																																	cellPadding="0"
+																																	cellSpacing="0"
+																																	className="mobile-button-container"
+																																	width="20%">
+																																	<tr>
+																																		<td
+																																			align="center"
+																																			style={{
+																																				padding:
+																																					"0"
+																																			}}>
+																																			<table
+																																				border="0"
+																																				cellPadding="0"
+																																				cellSpacing="0"
+																																				className="responsive-table">
+																																				<tr>
+																																					<td align="center">
+																																						<div className="microsoft-styling-buy-now">
+																																							<a
+																																								style={{
+																																									backgroundColor:
+																																										"#FB5724",
+																																									border:
+																																										"1px solid #FB5724",
+																																									borderRadius:
+																																										"3px",
+																																									color:
+																																										"#ffffff",
+																																									display:
+																																										"inline-block",
+																																									fontFamily:
+																																										"sans-serif",
+																																									fontSize:
+																																										"12px",
+																																									fontWeight:
+																																										"bold",
+																																									lineHeight:
+																																										"32px",
+																																									textAlign:
+																																										"center",
+																																									textDecoration:
+																																										"none",
+																																									width:
+																																										"90px",
+																																									WebKitTextSizeAdjust:
+																																										"none"
+																																								}}
+																																								href={
+																																									store
+																																										.URLs[5]
+																																										.URL +
+																																									"?utm_campaign=" +
+																																									store
+																																										.URLs[5]
+																																										.URLTitle +
+																																									"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																								}>
+																																								Buy
+																																								Tickets
+																																							</a>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</table>
+																																		</td>
+																																	</tr>
+																																</table>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
 																								</td>
 																							</tr>
-																						</tbody>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="left"
-																					className="productcell"
-																					valign="bottom">
-																					<table
-																						align="right"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						className="responsive-table"
-																						width="20%">
-																						<tr>
-																							<td
-																								align="right"
-																								className="font16"
-																								colSpan="2"
-																								style={{
-																									color: "#000034",
-																									fontSize: "15px",
-																									fontFamily:
-																										"'Lato', Arial, Helvetica, sans-serif",
-																									fontWeight:
-																										"normal",
-																									textTransform:
-																										"none",
-																									padding:
-																										"0 10px 0 0"
-																								}}>
-																								<strong>
-																									<em
-																										style={{
-																											fontFamily:
-																												"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																										}}>
-																										from
-																									</em>{" "}
-																									$
-																									{
-																										store.URLs[3]
-																											.price
-																									}
-																								</strong>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="productcell"
-																								style={{
-																									padding:
-																										"12px 0 0 0",
-																									fontFamily:
-																										"Arial, sans-serif",
-																									color: "#333333",
-																									fontSize: "15px"
-																								}}>
-																								<table
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									className="productcell"
-																									width="20%">
-																									<tr>
-																										<td
-																											align="center"
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="center"
+																						style={{ padding: "0px " }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="right"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="33%">
+																				<tr>
+																					<td style={{ padding: "0px" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[6]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[6]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[6]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/300x140"
 																											style={{
-																												padding:
-																													"0"
-																											}}>
-																											<table
-																												border="0"
-																												cellPadding="0"
-																												cellSpacing="0"
-																												className="responsive-table">
-																												<tr>
-																													<td align="center">
-																														<div className="microsoft-styling-buy-now">
-																															<a
+																												display:
+																													"block",
+																												color:
+																													"#515151; fontFamily: Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="180"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										width="98%">
+																										<tbody>
+																											<tr>
+																												<td align="left">
+																													<table
+																														align="center"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														style={{
+																															borderCollapse:
+																																"collapse"
+																														}}
+																														width="100%">
+																														<tbody>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="productcell"
+																																	style={{
+																																		color:
+																																			"#000000",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"10px 0 10px 0"
+																																	}}>
+																																	<strong>
+																																		{
+																																			store
+																																				.URLs[6]
+																																				.title
+																																		}
+																																	</strong>
+																																</td>
+																															</tr>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="font16"
+																																	style={{
+																																		color:
+																																			"#fc1d12",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"0 0 10px 0"
+																																	}}>
+																																	{
+																																		store
+																																			.URLs[6]
+																																			.subtext
+																																	}
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table>
+																													<table
+																														align="right"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														className="responsive-table"
+																														width="20%">
+																														<tr>
+																															<td
+																																align="right"
+																																className="font16"
+																																colSpan="2"
 																																style={{
-																																	backgroundColor:
-																																		"#FB5724",
-																																	border:
-																																		"1px solid #FB5724",
-																																	borderRadius:
-																																		"3px",
 																																	color:
-																																		"#ffffff",
-																																	display:
-																																		"inline-block",
-																																	fontFamily:
-																																		"sans-serif",
+																																		"#000034",
 																																	fontSize:
-																																		"12px",
+																																		"15px",
+																																	fontFamily:
+																																		"'Lato', Arial, Helvetica, sans-serif",
 																																	fontWeight:
-																																		"bold",
-																																	lineHeight:
-																																		"32px",
-																																	textAlign:
-																																		"center",
-																																	textDecoration:
+																																		"normal",
+																																	textTransform:
 																																		"none",
-																																	width:
-																																		"90px",
-																																	WebKitTextSizeAdjust:
-																																		"none"
-																																}}
-																																href={
-																																	store
-																																		.URLs[3]
-																																		.URL +
-																																	"?utm_campaign=" +
-																																	store
-																																		.URLs[3]
-																																		.URLTitle +
-																																	"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																}>
-																																Buy
-																																Tickets
-																															</a>
-																														</div>
-																													</td>
-																												</tr>
-																											</table>
-																										</td>
-																									</tr>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="left"
-																					className="productcell"
-																					valign="bottom">
-																					&#160;
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-																<tr>
-																	<td className="mobile-hide">&#160; </td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table
-										border="0"
-										cellPadding="0"
-										cellSpacing="0"
-										width="100%"
-										className="section-padding">
-										<tbody>
+																																	padding:
+																																		"0 10px 0 0"
+																																}}>
+																																<strong>
+																																	<em
+																																		style={{
+																																			fontFamily:
+																																				"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																		}}>
+																																		from
+																																	</em>{" "}
+																																	$
+																																	{
+																																		store
+																																			.URLs[6]
+																																			.price
+																																	}
+																																</strong>
+																															</td>
+																														</tr>
+																														<tr>
+																															<td
+																																align="center"
+																																style={{
+																																	padding:
+																																		"12px 0 0 0",
+																																	fontFamily:
+																																		"Arial, sans-serif",
+																																	color:
+																																		"#333333",
+																																	fontSize:
+																																		"15px"
+																																}}>
+																																<table
+																																	border="0"
+																																	cellPadding="0"
+																																	cellSpacing="0"
+																																	className="mobile-button-container"
+																																	width="20%">
+																																	<tr>
+																																		<td
+																																			align="center"
+																																			style={{
+																																				padding:
+																																					"0"
+																																			}}>
+																																			<table
+																																				border="0"
+																																				cellPadding="0"
+																																				cellSpacing="0"
+																																				className="responsive-table">
+																																				<tr>
+																																					<td align="center">
+																																						<div className="microsoft-styling-buy-now">
+																																							<a
+																																								style={{
+																																									backgroundColor:
+																																										"#FB5724",
+																																									border:
+																																										"1px solid #FB5724",
+																																									borderRadius:
+																																										"3px",
+																																									color:
+																																										"#ffffff",
+																																									display:
+																																										"inline-block",
+																																									fontFamily:
+																																										"sans-serif",
+																																									fontSize:
+																																										"12px",
+																																									fontWeight:
+																																										"bold",
+																																									lineHeight:
+																																										"32px",
+																																									textAlign:
+																																										"center",
+																																									textDecoration:
+																																										"none",
+																																									width:
+																																										"90px",
+																																									WebKitTextSizeAdjust:
+																																										"none"
+																																								}}
+																																								href={
+																																									store
+																																										.URLs[6]
+																																										.URL +
+																																									"?utm_campaign=" +
+																																									store
+																																										.URLs[6]
+																																										.URLTitle +
+																																									"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																								}>
+																																								Buy
+																																								Tickets
+																																							</a>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</table>
+																																		</td>
+																																	</tr>
+																																</table>
+																															</td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style={{ padding: "0px " }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td bgcolor="#ffffff">&#160;</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellPadding="0" cellSpacing="0" width="100%">
 											<tr>
 												<td align="center" bgcolor="#f2f2f2" className="section-padding">
 													<table
@@ -1259,2740 +2245,1851 @@ export class PromoEmailComponent extends Component {
 														cellPadding="0"
 														cellSpacing="0"
 														className="responsive-table">
-														<tbody
-															width="600"
-															border="0"
-															align="center"
-															cellPadding="0"
-															cellSpacing="0"
-															className="responsive-table">
-															<tr>
-																<td bgcolor="#ffffff">
-																	<table
-																		width="600"
-																		border="0"
-																		align="center"
-																		cellPadding="0"
-																		cellSpacing="0"
-																		className="responsive-table">
-																		<tbody
-																			width="600"
-																			border="0"
-																			align="center"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table">
-																			<tr>
-																				<td>&#160;</td>
-																			</tr>
-																			<tr>
-																				<td>&#160;</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<table
-										border="0"
-										cellPadding="0"
-										cellSpacing="0"
-										width="100%"
-										className="section-padding">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2" className="section-padding">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<tr>
-														<td bgcolor="#ffffff">
-															<table
-																align="center"
-																border="0"
-																cellPadding="0"
-																cellSpacing="0"
-																width="98%">
-																<tr>
-																	<td
-																		align="left"
-																		bgcolor="#000034"
-																		style={{
-																			fontFamily: "'Lato', Arial",
-																			fontSize: "16px",
-																			color: "#ffffff",
-																			wordWrap: "break-word",
-																			textTransform: "uppercase",
-																			padding: "10px"
-																		}}
-																		valign="top"
-																		className="City">
-																		<strong>Las Vegas</strong>
-																	</td>
-																</tr>
-																<tr>
-																	<td
-																		className="mobile-wrapper"
-																		style={{ padding: "0" }}
-																		valign="top">
-																		<table
+														<tr>
+															<td bgcolor="#ffffff">
+																<table
+																	align="center"
+																	border="0"
+																	cellPadding="0"
+																	cellSpacing="0"
+																	width="98%">
+																	<tr>
+																		<td
 																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="33%">
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[4]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[4]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[4]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
-																										}}
-																										width="180"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
+																			bgcolor="#000034"
+																			style={{
+																				fontFamily: "'Lato', Arial",
+																				fontSize: "16px",
+																				color: "#ffffff",
+																				wordWrap: "break-word",
+																				textTransform: "uppercase",
+																				padding: "10px"
+																			}}
+																			valign="top"
+																			className="City">
+																			<strong>Orlando</strong>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td
+																			className="mobile-wrapper"
+																			style={{ padding: "0" }}
+																			valign="top">
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="47%">
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[7]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[7]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[7]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/300x140"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"98%",
+																												height:
+																													"auto"
+																											}}
+																											width="265"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
 																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									width="98%">
-																									<tbody>
-																										<tr>
-																											<td align="left">
-																												<table
-																													align="center"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													style={{
-																														collapse:
-																															"collapse"
-																													}}
-																													width="100%">
-																													<tbody>
-																														<tr>
-																															<td
-																																align="left"
-																																className="productcell"
-																																style={{
-																																	color:
-																																		"#000000",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"10px 0 10px 0"
-																																}}>
-																																<strong>
-																																	{
-																																		store
-																																			.URLs[4]
-																																			.title
-																																	}
-																																</strong>
-																															</td>
-																														</tr>
-																														<tr>
-																															<td
-																																align="left"
-																																className="font16"
-																																style={{
-																																	color:
-																																		"#fc1d12",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"0 0 10px 0"
-																																}}>
-																																{
-																																	store
-																																		.URLs[4]
-																																		.subtext
-																																}
-																															</td>
-																														</tr>
-																													</tbody>
-																												</table>
-																												<table
-																													align="right"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													className="responsive-table"
-																													width="20%">
-																													<tr>
-																														<td
-																															align="right"
-																															className="font16"
-																															colSpan="2"
-																															style={{
-																																color:
-																																	"#000034",
-																																fontSize:
-																																	"15px; fontFamily:'Lato', Arial, Helvetica, sans-serif",
-																																fontWeight:
-																																	"normal",
-																																textTransform:
-																																	"none",
-																																padding:
-																																	"0 10px 0 0"
-																															}}>
-																															<strong>
-																																<em
+																									className="promo-padding">
+																									<table
+																										align="center"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										width="98%">
+																										<tbody>
+																											<tr>
+																												<td align="left">
+																													<table
+																														align="center"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														style={{
+																															borderCollapse:
+																																"collapse"
+																														}}
+																														width="100%">
+																														<tbody>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="productcell"
 																																	style={{
+																																		color:
+																																			"#000000",
+																																		fontSize:
+																																			"15px",
 																																		fontFamily:
-																																			"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"10px 0 10px 0"
 																																	}}>
-																																	from
-																																</em>{" "}
-																																$
-																																{
-																																	store
-																																		.URLs[4]
-																																		.price
-																																}
-																															</strong>
-																														</td>
-																													</tr>
-																													<tr>
-																														<td
-																															align="center"
-																															style={{
-																																padding:
-																																	"12px 0 0 0",
-																																fontFamily:
-																																	"Arial, sans-serif",
-																																color:
-																																	"#333333",
-																																fontSize:
-																																	"15px"
-																															}}>
-																															<table
-																																border="0"
-																																cellPadding="0"
-																																cellSpacing="0"
-																																className="mobile-button-container"
-																																width="20%">
-																																<tr>
-																																	<td
-																																		align="center"
-																																		style={{
-																																			padding:
-																																				"0"
-																																		}}>
-																																		<table
-																																			border="0"
-																																			cellPadding="0"
-																																			cellSpacing="0"
-																																			className="responsive-table">
-																																			<tr>
-																																				<td align="center">
-																																					<div className="microsoft-styling-buy-now">
-																																						<a
-																																							style={{
-																																								backgroundColor:
-																																									"#FB5724",
-																																								border:
-																																									"1px solid #FB5724",
-																																								borderRadius:
-																																									"3px",
-																																								color:
-																																									"#ffffff",
-																																								display:
-																																									"inline-block",
-																																								fontFamily:
-																																									"sans-serif",
-																																								fontSize:
-																																									"12px",
-																																								fontWeight:
-																																									"bold",
-																																								lineHeight:
-																																									"32px",
-																																								textAlign:
-																																									"center",
-																																								textDecoration:
-																																									"none",
-																																								width:
-																																									"90px",
-																																								WebKitTextSizeAdjust:
-																																									"none"
-																																							}}
-																																							href={
-																																								store
-																																									.URLs[4]
-																																									.URL +
-																																								"?utm_campaign=" +
-																																								store
-																																									.URLs[4]
-																																									.URLTitle +
-																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																							}>
-																																							Buy
-																																							Tickets
-																																						</a>
-																																					</div>
-																																				</td>
-																																			</tr>
-																																		</table>
-																																	</td>
-																																</tr>
-																															</table>
-																														</td>
-																													</tr>
-																												</table>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="33%">
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px" }}>
-																					&nbsp;
-																				</td>
-																				<td
-																					align="center"
-																					style={{ padding: "0px" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[5]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[5]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[5]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
-																										}}
-																										width="180"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									width="98%">
-																									<tbody>
-																										<tr>
-																											<td align="left">
-																												<table
-																													align="center"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													style={{
-																														borderCollapse:
-																															"collapse"
-																													}}
-																													width="100%">
-																													<tbody>
-																														<tr>
-																															<td
-																																align="left"
-																																className="productcell"
-																																style={{
-																																	color:
-																																		"#000000",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"10px 0 10px 0"
-																																}}>
-																																<strong>
-																																	{
-																																		store
-																																			.URLs[5]
-																																			.title
-																																	}
-																																</strong>
-																															</td>
-																														</tr>
-																														<tr>
-																															<td
-																																align="left"
-																																className="font16"
-																																style={{
-																																	color:
-																																		"#fc1d12",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"0 0 10px 0"
-																																}}>
-																																{
-																																	store
-																																		.URLs[5]
-																																		.subtext
-																																}
-																															</td>
-																														</tr>
-																													</tbody>
-																												</table>
-																												<table
-																													align="right"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													className="responsive-table"
-																													width="20%">
-																													<tr>
-																														<td
-																															align="right"
-																															className="font16"
-																															colSpan="2"
-																															style={{
-																																color:
-																																	"#000034",
-																																fontSize:
-																																	"15px",
-																																fontFamily:
-																																	"'Lato', Arial, Helvetica, sans-serif",
-																																fontWeight:
-																																	"normal",
-																																textTransform:
-																																	"none",
-																																padding:
-																																	"0 10px 0 0"
-																															}}>
-																															<strong>
-																																<em
+																																	<strong>
+																																		{
+																																			store
+																																				.URLs[7]
+																																				.title
+																																		}
+																																	</strong>
+																																</td>
+																															</tr>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="font16"
 																																	style={{
+																																		color:
+																																			"#fc1d12",
+																																		fontSize:
+																																			"15px",
 																																		fontFamily:
-																																			"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"0 0 10px 0"
 																																	}}>
-																																	from
-																																</em>{" "}
-																																$
-																																{
-																																	store
-																																		.URLs[5]
-																																		.price
-																																}
-																															</strong>
-																														</td>
-																													</tr>
-																													<tr>
-																														<td
-																															align="center"
-																															style={{
-																																padding:
-																																	"12px 0 0 0",
-																																fontFamily:
-																																	"Arial, sans-serif",
-																																color:
-																																	"#333333; fontSize: 15px"
-																															}}>
-																															<table
-																																border="0"
-																																cellPadding="0"
-																																cellSpacing="0"
-																																className="mobile-button-container"
-																																width="20%">
-																																<tr>
-																																	<td
-																																		align="center"
-																																		style={{
-																																			padding:
-																																				"0"
-																																		}}>
-																																		<table
-																																			border="0"
-																																			cellPadding="0"
-																																			cellSpacing="0"
-																																			className="responsive-table">
-																																			<tr>
-																																				<td align="center">
-																																					<div className="microsoft-styling-buy-now">
-																																						<a
-																																							style={{
-																																								backgroundColor:
-																																									"#FB5724",
-																																								border:
-																																									"1px solid #FB5724",
-																																								borderRadius:
-																																									"3px",
-																																								color:
-																																									"#ffffff",
-																																								display:
-																																									"inline-block",
-																																								fontFamily:
-																																									"sans-serif",
-																																								fontSize:
-																																									"12px",
-																																								fontWeight:
-																																									"bold",
-																																								lineHeight:
-																																									"32px",
-																																								textAlign:
-																																									"center",
-																																								textDecoration:
-																																									"none",
-																																								width:
-																																									"90px",
-																																								WebKitTextSizeAdjust:
-																																									"none"
-																																							}}
-																																							href={
-																																								store
-																																									.URLs[5]
-																																									.URL +
-																																								"?utm_campaign=" +
-																																								store
-																																									.URLs[5]
-																																									.URLTitle +
-																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																							}>
-																																							Buy
-																																							Tickets
-																																						</a>
-																																					</div>
-																																				</td>
-																																			</tr>
-																																		</table>
-																																	</td>
-																																</tr>
-																															</table>
-																														</td>
-																													</tr>
-																												</table>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px " }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="right"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="33%">
-																			<tr>
-																				<td style={{ padding: "0px" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[6]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[6]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[6]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151; fontFamily: Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
-																										}}
-																										width="180"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									width="98%">
-																									<tbody>
-																										<tr>
-																											<td align="left">
-																												<table
-																													align="center"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													style={{
-																														borderCollapse:
-																															"collapse"
-																													}}
-																													width="100%">
-																													<tbody>
-																														<tr>
-																															<td
-																																align="left"
-																																className="productcell"
-																																style={{
-																																	color:
-																																		"#000000",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"10px 0 10px 0"
-																																}}>
-																																<strong>
-																																	{
-																																		store
-																																			.URLs[6]
-																																			.title
-																																	}
-																																</strong>
-																															</td>
-																														</tr>
-																														<tr>
-																															<td
-																																align="left"
-																																className="font16"
-																																style={{
-																																	color:
-																																		"#fc1d12",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"0 0 10px 0"
-																																}}>
-																																{
-																																	store
-																																		.URLs[6]
-																																		.subtext
-																																}
-																															</td>
-																														</tr>
-																													</tbody>
-																												</table>
-																												<table
-																													align="right"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													className="responsive-table"
-																													width="20%">
-																													<tr>
-																														<td
-																															align="right"
-																															className="font16"
-																															colSpan="2"
-																															style={{
-																																color:
-																																	"#000034",
-																																fontSize:
-																																	"15px",
-																																fontFamily:
-																																	"'Lato', Arial, Helvetica, sans-serif",
-																																fontWeight:
-																																	"normal",
-																																textTransform:
-																																	"none",
-																																padding:
-																																	"0 10px 0 0"
-																															}}>
-																															<strong>
-																																<em
-																																	style={{
-																																		fontFamily:
-																																			"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																																	}}>
-																																	from
-																																</em>{" "}
-																																$
-																																{
-																																	store
-																																		.URLs[6]
-																																		.price
-																																}
-																															</strong>
-																														</td>
-																													</tr>
-																													<tr>
-																														<td
-																															align="center"
-																															style={{
-																																padding:
-																																	"12px 0 0 0",
-																																fontFamily:
-																																	"Arial, sans-serif",
-																																color:
-																																	"#333333",
-																																fontSize:
-																																	"15px"
-																															}}>
-																															<table
-																																border="0"
-																																cellPadding="0"
-																																cellSpacing="0"
-																																className="mobile-button-container"
-																																width="20%">
-																																<tr>
-																																	<td
-																																		align="center"
-																																		style={{
-																																			padding:
-																																				"0"
-																																		}}>
-																																		<table
-																																			border="0"
-																																			cellPadding="0"
-																																			cellSpacing="0"
-																																			className="responsive-table">
-																																			<tr>
-																																				<td align="center">
-																																					<div className="microsoft-styling-buy-now">
-																																						<a
-																																							style={{
-																																								backgroundColor:
-																																									"#FB5724",
-																																								border:
-																																									"1px solid #FB5724",
-																																								borderRadius:
-																																									"3px",
-																																								color:
-																																									"#ffffff",
-																																								display:
-																																									"inline-block",
-																																								fontFamily:
-																																									"sans-serif",
-																																								fontSize:
-																																									"12px",
-																																								fontWeight:
-																																									"bold",
-																																								lineHeight:
-																																									"32px",
-																																								textAlign:
-																																									"center",
-																																								textDecoration:
-																																									"none",
-																																								width:
-																																									"90px",
-																																								WebKitTextSizeAdjust:
-																																									"none"
-																																							}}
-																																							href={
-																																								store
-																																									.URLs[6]
-																																									.URL +
-																																								"?utm_campaign=" +
-																																								store
-																																									.URLs[6]
-																																									.URLTitle +
-																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																							}>
-																																							Buy
-																																							Tickets
-																																						</a>
-																																					</div>
-																																				</td>
-																																			</tr>
-																																		</table>
-																																	</td>
-																																</tr>
-																															</table>
-																														</td>
-																													</tr>
-																												</table>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px " }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#ffffff">&#160;</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table border="0" cellPadding="0" cellSpacing="0" width="100%">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2" className="section-padding">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<tr>
-														<td bgcolor="#ffffff">
-															<table
-																align="center"
-																border="0"
-																cellPadding="0"
-																cellSpacing="0"
-																width="98%">
-																<tr>
-																	<td
-																		align="left"
-																		bgcolor="#000034"
-																		style={{
-																			fontFamily: "'Lato', Arial",
-																			fontSize: "16px",
-																			color: "#ffffff",
-																			wordWrap: "break-word",
-																			textTransform: "uppercase",
-																			padding: "10px"
-																		}}
-																		valign="top"
-																		className="City">
-																		<strong>Orlando</strong>
-																	</td>
-																</tr>
-																<tr>
-																	<td
-																		className="mobile-wrapper"
-																		style={{ padding: "0" }}
-																		valign="top">
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="47%">
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[7]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[7]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[7]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"98%",
-																											height:
-																												"auto"
-																										}}
-																										width="265"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									width="98%">
-																									<tbody>
-																										<tr>
-																											<td align="left">
-																												<table
-																													align="center"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													style={{
-																														borderCollapse:
-																															"collapse"
-																													}}
-																													width="100%">
-																													<tbody>
-																														<tr>
-																															<td
-																																align="left"
-																																className="productcell"
-																																style={{
-																																	color:
-																																		"#000000",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"10px 0 10px 0"
-																																}}>
-																																<strong>
 																																	{
 																																		store
 																																			.URLs[7]
-																																			.title
+																																			.subtext
+																																	}
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table>
+																													<table
+																														align="right"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														className="responsive-table"
+																														width="20%">
+																														<tr>
+																															<td
+																																align="right"
+																																className="font16"
+																																colSpan="2"
+																																style={{
+																																	color:
+																																		"#000034",
+																																	fontSize:
+																																		"15px",
+																																	fontFamily:
+																																		"'Lato', Arial, Helvetica, sans-serif",
+																																	fontWeight:
+																																		"normal",
+																																	textTransform:
+																																		"none",
+																																	padding:
+																																		"0 10px 0 0"
+																																}}>
+																																<strong>
+																																	<em
+																																		style={{
+																																			fontFamily:
+																																				"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																		}}>
+																																		from
+																																	</em>{" "}
+																																	$
+																																	{
+																																		store
+																																			.URLs[7]
+																																			.price
 																																	}
 																																</strong>
 																															</td>
 																														</tr>
 																														<tr>
 																															<td
-																																align="left"
-																																className="font16"
+																																align="center"
 																																style={{
-																																	color:
-																																		"#fc1d12",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
 																																	padding:
-																																		"0 0 10px 0"
+																																		"12px 0 0 0",
+																																	fontFamily:
+																																		"Arial, sans-serif",
+																																	color:
+																																		"#333333",
+																																	fontSize:
+																																		"15px"
 																																}}>
-																																{
-																																	store
-																																		.URLs[7]
-																																		.subtext
-																																}
+																																<table
+																																	border="0"
+																																	cellPadding="0"
+																																	cellSpacing="0"
+																																	className="mobile-button-container"
+																																	width="20%">
+																																	<tr>
+																																		<td
+																																			align="center"
+																																			style={{
+																																				padding:
+																																					"0"
+																																			}}>
+																																			<table
+																																				border="0"
+																																				cellPadding="0"
+																																				cellSpacing="0"
+																																				className="responsive-table">
+																																				<tr>
+																																					<td align="center">
+																																						<div className="microsoft-styling-buy-now-space">
+																																							{" "}
+																																							<a
+																																								style={{
+																																									backgroundColor:
+																																										"#FB5724",
+																																									border:
+																																										"1px solid #FB5724",
+																																									borderRadius:
+																																										"3px",
+																																									color:
+																																										"#ffffff",
+																																									display:
+																																										"inline-block",
+																																									fontFamily:
+																																										"sans-serif",
+																																									fontSize:
+																																										"12px",
+																																									fontWeight:
+																																										"bold",
+																																									lineHeight:
+																																										"32px",
+																																									textAlign:
+																																										"center",
+																																									textDecoration:
+																																										"none",
+																																									width:
+																																										"90px",
+																																									WebKitTextSizeAdjust:
+																																										"none"
+																																								}}
+																																								href={
+																																									store
+																																										.URLs[7]
+																																										.URL +
+																																									"?utm_campaign=" +
+																																									store
+																																										.URLs[7]
+																																										.URLTitle +
+																																									"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																								}>
+																																								Buy
+																																								Tickets
+																																							</a>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</table>
+																																		</td>
+																																	</tr>
+																																</table>
 																															</td>
 																														</tr>
-																													</tbody>
-																												</table>
-																												<table
-																													align="right"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													className="responsive-table"
-																													width="20%">
-																													<tr>
-																														<td
-																															align="right"
-																															className="font16"
-																															colSpan="2"
-																															style={{
-																																color:
-																																	"#000034",
-																																fontSize:
-																																	"15px",
-																																fontFamily:
-																																	"'Lato', Arial, Helvetica, sans-serif",
-																																fontWeight:
-																																	"normal",
-																																textTransform:
-																																	"none",
-																																padding:
-																																	"0 10px 0 0"
-																															}}>
-																															<strong>
-																																<em
-																																	style={{
-																																		fontFamily:
-																																			"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																																	}}>
-																																	from
-																																</em>{" "}
-																																$
-																																{
-																																	store
-																																		.URLs[7]
-																																		.price
-																																}
-																															</strong>
-																														</td>
-																													</tr>
-																													<tr>
-																														<td
-																															align="center"
-																															style={{
-																																padding:
-																																	"12px 0 0 0",
-																																fontFamily:
-																																	"Arial, sans-serif",
-																																color:
-																																	"#333333",
-																																fontSize:
-																																	"15px"
-																															}}>
-																															<table
-																																border="0"
-																																cellPadding="0"
-																																cellSpacing="0"
-																																className="mobile-button-container"
-																																width="20%">
-																																<tr>
-																																	<td
-																																		align="center"
-																																		style={{
-																																			padding:
-																																				"0"
-																																		}}>
-																																		<table
-																																			border="0"
-																																			cellPadding="0"
-																																			cellSpacing="0"
-																																			className="responsive-table">
-																																			<tr>
-																																				<td align="center">
-																																					<div className="microsoft-styling-buy-now-space">
-																																						{" "}
-																																						<a
-																																							style={{
-																																								backgroundColor:
-																																									"#FB5724",
-																																								border:
-																																									"1px solid #FB5724",
-																																								borderRadius:
-																																									"3px",
-																																								color:
-																																									"#ffffff",
-																																								display:
-																																									"inline-block",
-																																								fontFamily:
-																																									"sans-serif",
-																																								fontSize:
-																																									"12px",
-																																								fontWeight:
-																																									"bold",
-																																								lineHeight:
-																																									"32px",
-																																								textAlign:
-																																									"center",
-																																								textDecoration:
-																																									"none",
-																																								width:
-																																									"90px",
-																																								WebKitTextSizeAdjust:
-																																									"none"
-																																							}}
-																																							href={
-																																								store
-																																									.URLs[7]
-																																									.URL +
-																																								"?utm_campaign=" +
-																																								store
-																																									.URLs[7]
-																																									.URLTitle +
-																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																							}>
-																																							Buy
-																																							Tickets
-																																						</a>
-																																					</div>
-																																				</td>
-																																			</tr>
-																																		</table>
-																																	</td>
-																																</tr>
-																															</table>
-																														</td>
-																													</tr>
-																												</table>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="right"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="47%">
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="right"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[8]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[8]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[8]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/300x140"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"98%",
-																											height:
-																												"auto"
-																										}}
-																										width="265"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
+																													</table>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="right"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="47%">
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
 																									align="right"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									width="98%">
-																									<tbody>
-																										<tr>
-																											<td
-																												align="left"
-																												width="200">
-																												<table
-																													align="center"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													style={{
-																														borderCollapse:
-																															"collapse"
-																													}}
-																													width="100%">
-																													<tbody>
-																														<tr>
-																															<td
-																																align="left"
-																																className="productcell"
-																																style={{
-																																	color:
-																																		"#000000",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
-																																	padding:
-																																		"10px 0 10px 0"
-																																}}>
-																																<strong>
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[8]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[8]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[8]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/300x140"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"98%",
+																												height:
+																													"auto"
+																											}}
+																											width="265"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="right"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										width="98%">
+																										<tbody>
+																											<tr>
+																												<td
+																													align="left"
+																													width="200">
+																													<table
+																														align="center"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														style={{
+																															borderCollapse:
+																																"collapse"
+																														}}
+																														width="100%">
+																														<tbody>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="productcell"
+																																	style={{
+																																		color:
+																																			"#000000",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"10px 0 10px 0"
+																																	}}>
+																																	<strong>
+																																		{
+																																			store
+																																				.URLs[8]
+																																				.title
+																																		}
+																																	</strong>
+																																</td>
+																															</tr>
+																															<tr>
+																																<td
+																																	align="left"
+																																	className="font16"
+																																	style={{
+																																		color:
+																																			"#fc1d12",
+																																		fontSize:
+																																			"15px",
+																																		fontFamily:
+																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																		fontWeight:
+																																			"normal",
+																																		padding:
+																																			"0 0 10px 0"
+																																	}}>
 																																	{
 																																		store
 																																			.URLs[8]
-																																			.title
+																																			.subtext
+																																	}
+																																</td>
+																															</tr>
+																														</tbody>
+																													</table>
+																													<table
+																														align="right"
+																														border="0"
+																														cellPadding="0"
+																														cellSpacing="0"
+																														className="responsive-table"
+																														width="20%">
+																														<tr>
+																															<td
+																																align="right"
+																																className="font16"
+																																colSpan="2"
+																																style={{
+																																	color:
+																																		"#000034",
+																																	fontSize:
+																																		"15px",
+																																	fontFamily:
+																																		"'Lato', Arial, Helvetica, sans-serif",
+																																	fontWeight:
+																																		"normal",
+																																	textTransform:
+																																		"none",
+																																	padding:
+																																		"0 10px 0 0"
+																																}}>
+																																<strong>
+																																	<em
+																																		style={{
+																																			fontFamily:
+																																				"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																																		}}>
+																																		from
+																																	</em>{" "}
+																																	$
+																																	{
+																																		store
+																																			.URLs[8]
+																																			.price
 																																	}
 																																</strong>
 																															</td>
 																														</tr>
 																														<tr>
 																															<td
-																																align="left"
-																																className="font16"
+																																align="center"
 																																style={{
-																																	color:
-																																		"#fc1d12",
-																																	fontSize:
-																																		"15px",
-																																	fontFamily:
-																																		"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																	fontWeight:
-																																		"normal",
 																																	padding:
-																																		"0 0 10px 0"
+																																		"12px 0 0 0",
+																																	fontFamily:
+																																		"Arial, sans-serif",
+																																	color:
+																																		"#333333",
+																																	fontSize:
+																																		"15px"
 																																}}>
-																																{
-																																	store
-																																		.URLs[8]
-																																		.subtext
-																																}
+																																<table
+																																	border="0"
+																																	cellPadding="0"
+																																	cellSpacing="0"
+																																	className="mobile-button-container"
+																																	width="20%">
+																																	<tr>
+																																		<td
+																																			align="center"
+																																			style={{
+																																				padding:
+																																					"0"
+																																			}}>
+																																			<table
+																																				border="0"
+																																				cellPadding="0"
+																																				cellSpacing="0"
+																																				className="responsive-table">
+																																				<tr>
+																																					<td align="center">
+																																						<div className="microsoft-styling-buy-now-space">
+																																							{" "}
+																																							<a
+																																								style={{
+																																									backgroundColor:
+																																										"#FB5724",
+																																									border:
+																																										"1px solid #FB5724",
+																																									borderRadius:
+																																										"3px",
+																																									color:
+																																										"#ffffff",
+																																									display:
+																																										"inline-block",
+																																									fontFamily:
+																																										"sans-serif",
+																																									fontSize:
+																																										"12px",
+																																									fontWeight:
+																																										"bold",
+																																									lineHeight:
+																																										"32px",
+																																									textAlign:
+																																										"center",
+																																									textDecoration:
+																																										"none",
+																																									width:
+																																										"90px",
+																																									WebKitTextSizeAdjust:
+																																										"none"
+																																								}}
+																																								href={
+																																									store
+																																										.URLs[8]
+																																										.URL +
+																																									"?utm_campaign=" +
+																																									store
+																																										.URLs[8]
+																																										.URLTitle +
+																																									"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																								}>
+																																								Buy
+																																								Tickets
+																																							</a>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</table>
+																																		</td>
+																																	</tr>
+																																</table>
 																															</td>
 																														</tr>
-																													</tbody>
-																												</table>
-																												<table
-																													align="right"
-																													border="0"
-																													cellPadding="0"
-																													cellSpacing="0"
-																													className="responsive-table"
-																													width="20%">
-																													<tr>
-																														<td
-																															align="right"
-																															className="font16"
-																															colSpan="2"
-																															style={{
-																																color:
-																																	"#000034",
-																																fontSize:
-																																	"15px",
-																																fontFamily:
-																																	"'Lato', Arial, Helvetica, sans-serif",
-																																fontWeight:
-																																	"normal",
-																																textTransform:
-																																	"none",
-																																padding:
-																																	"0 10px 0 0"
-																															}}>
-																															<strong>
-																																<em
-																																	style={{
-																																		fontFamily:
-																																			"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																																	}}>
-																																	from
-																																</em>{" "}
-																																$
-																																{
-																																	store
-																																		.URLs[8]
-																																		.price
-																																}
-																															</strong>
-																														</td>
-																													</tr>
-																													<tr>
-																														<td
-																															align="center"
-																															style={{
-																																padding:
-																																	"12px 0 0 0",
-																																fontFamily:
-																																	"Arial, sans-serif",
-																																color:
-																																	"#333333",
-																																fontSize:
-																																	"15px"
-																															}}>
-																															<table
-																																border="0"
-																																cellPadding="0"
-																																cellSpacing="0"
-																																className="mobile-button-container"
-																																width="20%">
-																																<tr>
-																																	<td
-																																		align="center"
-																																		style={{
-																																			padding:
-																																				"0"
-																																		}}>
-																																		<table
-																																			border="0"
-																																			cellPadding="0"
-																																			cellSpacing="0"
-																																			className="responsive-table">
-																																			<tr>
-																																				<td align="center">
-																																					<div className="microsoft-styling-buy-now-space">
-																																						{" "}
-																																						<a
-																																							style={{
-																																								backgroundColor:
-																																									"#FB5724",
-																																								border:
-																																									"1px solid #FB5724",
-																																								borderRadius:
-																																									"3px",
-																																								color:
-																																									"#ffffff",
-																																								display:
-																																									"inline-block",
-																																								fontFamily:
-																																									"sans-serif",
-																																								fontSize:
-																																									"12px",
-																																								fontWeight:
-																																									"bold",
-																																								lineHeight:
-																																									"32px",
-																																								textAlign:
-																																									"center",
-																																								textDecoration:
-																																									"none",
-																																								width:
-																																									"90px",
-																																								WebKitTextSizeAdjust:
-																																									"none"
-																																							}}
-																																							href={
-																																								store
-																																									.URLs[8]
-																																									.URL +
-																																								"?utm_campaign=" +
-																																								store
-																																									.URLs[8]
-																																									.URLTitle +
-																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																																							}>
-																																							Buy
-																																							Tickets
-																																						</a>
-																																					</div>
-																																				</td>
-																																			</tr>
-																																		</table>
-																																	</td>
-																																</tr>
-																															</table>
-																														</td>
-																													</tr>
-																												</table>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-													<tr />
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table border="0" cellPadding="0" cellSpacing="0" width="100%">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2" className="section-padding">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<tr>
-														<td bgcolor="#ffffff">
-															<table
-																align="center"
-																border="0"
-																cellPadding="0"
-																cellSpacing="0"
-																width="98%">
-																<tr>
-																	<td align="center" bgcolor="#ffffff" height="50">
-																		<table
+																													</table>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr />
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+											<tr>
+												<td align="center" bgcolor="#f2f2f2" className="section-padding">
+													<table
+														width="600"
+														border="0"
+														align="center"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table">
+														<tr>
+															<td bgcolor="#ffffff">
+																<table
+																	align="center"
+																	border="0"
+																	cellPadding="0"
+																	cellSpacing="0"
+																	width="98%">
+																	<tr>
+																		<td
 																			align="center"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			width="100%">
-																			<tbody>
+																			bgcolor="#ffffff"
+																			height="50">
+																			<table
+																				align="center"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				width="100%">
+																				<tbody>
+																					<tr>
+																						<td
+																							align="center"
+																							className="mobile-hide"
+																							valign="middle"
+																							width="20%">
+																							<hr
+																								style={{
+																									width: "90%",
+																									display:
+																										"inline-block"
+																								}}
+																							/>
+																						</td>
+																						<td
+																							align="center"
+																							className="stack-column-center p-0"
+																							style={{
+																								fontFamily:
+																									"'Lato', Arial",
+																								fontSize: "24px",
+																								color: "#000034",
+																								word: "break-word",
+																								textTransform:
+																									"capitalize",
+																								style: "italic"
+																							}}
+																							width="60%">
+																							<strong>
+																								Recommended For You
+																							</strong>
+																						</td>
+																						<td
+																							align="center"
+																							className="mobile-hide"
+																							valign="middle"
+																							width="20%">
+																							<hr
+																								style={{
+																									width: "90%",
+																									display:
+																										"inline-block"
+																								}}
+																							/>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td
+																			className="mobile-wrapper"
+																			style={{ padding: "0" }}
+																			valign="top">
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table-50"
+																				width="24%">
 																				<tr>
 																					<td
 																						align="center"
-																						className="mobile-hide"
-																						valign="middle"
-																						width="20%">
-																						<hr
-																							style={{
-																								width: "90%",
-																								display: "inline-block"
-																							}}
-																						/>
-																					</td>
-																					<td
-																						align="center"
-																						className="stack-column-center p-0"
-																						style={{
-																							fontFamily: "'Lato', Arial",
-																							fontSize: "24px",
-																							color: "#000034",
-																							word: "break-word",
-																							textTransform: "capitalize",
-																							style: "italic"
-																						}}
-																						width="60%">
-																						<strong>
-																							Recommended For You
-																						</strong>
-																					</td>
-																					<td
-																						align="center"
-																						className="mobile-hide"
-																						valign="middle"
-																						width="20%">
-																						<hr
-																							style={{
-																								width: "90%",
-																								display: "inline-block"
-																							}}
-																						/>
+																						style={{ padding: "0px 0" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="140">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[9]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[9]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[9]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/140x215"
+																											style={{
+																												display:
+																													"block; color: #515151; fontFamily: Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"140px; height:auto"
+																											}}
+																											width="140"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										style={{
+																											borderCollapse:
+																												"collapse"
+																										}}
+																										width="100%">
+																										<tbody>
+																											<tr>
+																												<td
+																													align="center"
+																													className="productcell"
+																													style={{
+																														color:
+																															"#000000",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														padding:
+																															"20px 0 20px 0"
+																													}}>
+																													{
+																														store
+																															.URLs[9]
+																															.title
+																													}
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													align="center"
+																													className="font16"
+																													style={{
+																														color:
+																															"#000034",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"'Lato', Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														textTransform:
+																															"none",
+																														padding:
+																															"0 10px 0 0"
+																													}}>
+																													<strong>
+																														<em
+																															style={{
+																																fontFamily:
+																																	"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																															}}>
+																															from
+																														</em>{" "}
+																														$
+																														{
+																															store
+																																.URLs[9]
+																																.price
+																														}
+																													</strong>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													height="60"
+																													align="center"
+																													valign="middle">
+																													<a
+																														style={{
+																															color:
+																																"#23a1fd",
+																															fontSize:
+																																"13px",
+																															fontFamily:
+																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																															fontWeight:
+																																"normal",
+																															textTransform:
+																																"uppercase",
+																															textDecoration:
+																																"none"
+																														}}
+																														href={
+																															store
+																																.URLs[9]
+																																.URL +
+																															"?utm_campaign=" +
+																															store
+																																.URLs[9]
+																																.URLTitle +
+																															"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																														}>
+																														<strong>
+																															BUY
+																															TICKETS
+																														</strong>
+																													</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
 																					</td>
 																				</tr>
-																			</tbody>
-																		</table>
-																	</td>
-																</tr>
-																<tr>
-																	<td
-																		className="mobile-wrapper"
-																		style={{ padding: "0" }}
-																		valign="top">
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table-50"
-																			width="24%">
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px 0" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="140">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[9]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[9]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[9]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/140x215"
-																										style={{
-																											display:
-																												"block; color: #515151; fontFamily: Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"140px; height:auto"
-																										}}
-																										width="140"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									style={{
-																										borderCollapse:
-																											"collapse"
-																									}}
-																									width="100%">
-																									<tbody>
-																										<tr>
-																											<td
-																												align="center"
-																												className="productcell"
-																												style={{
-																													color:
-																														"#000000",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													padding:
-																														"20px 0 20px 0"
-																												}}>
-																												{
-																													store
-																														.URLs[9]
-																														.title
-																												}
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												align="center"
-																												className="font16"
-																												style={{
-																													color:
-																														"#000034",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"'Lato', Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													textTransform:
-																														"none",
-																													padding:
-																														"0 10px 0 0"
-																												}}>
-																												<strong>
-																													<em
-																														style={{
-																															fontFamily:
-																																"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																														}}>
-																														from
-																													</em>{" "}
-																													$
-																													{
-																														store
-																															.URLs[9]
-																															.price
-																													}
-																												</strong>
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												height="60"
-																												align="center"
-																												valign="middle">
-																												<a
-																													style={{
-																														color:
-																															"#23a1fd",
-																														fontSize:
-																															"13px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																														fontWeight:
-																															"normal",
-																														textTransform:
-																															"uppercase",
-																														textDecoration:
-																															"none"
-																													}}
-																													href={
-																														store
-																															.URLs[9]
-																															.URL +
-																														"?utm_campaign=" +
-																														store
-																															.URLs[9]
-																															.URLTitle +
-																														"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																													}>
-																													<strong>
-																														BUY
-																														TICKETS
-																													</strong>
-																												</a>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table-50"
-																			width="24%">
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px" }}>
-																					&nbsp;
-																				</td>
-																				<td
-																					align="center"
-																					style={{ padding: "0 0 0px 3px" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="140">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[10]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[10]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[10]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/140x215"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"140px",
-																											height:
-																												"auto"
-																										}}
-																										width="140"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									style={{
-																										collapse:
-																											"collapse"
-																									}}
-																									width="100%">
-																									<tbody>
-																										<tr>
-																											<td
-																												align="center"
-																												className="productcell"
-																												style={{
-																													color:
-																														"#000000",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													padding:
-																														"20px 0 20px 0"
-																												}}>
-																												{
-																													store
-																														.URLs[10]
-																														.title
-																												}
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												align="center"
-																												className="font16"
-																												style={{
-																													color:
-																														"#000034",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"'Lato', Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													textTransform:
-																														"none",
-																													padding:
-																														"0 10px 0 0"
-																												}}>
-																												<strong>
-																													<em
-																														style={{
-																															fontFamily:
-																																"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																														}}>
-																														from
-																													</em>{" "}
-																													$
-																													{
-																														store
-																															.URLs[10]
-																															.price
-																													}
-																												</strong>
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												height="60"
-																												align="center"
-																												valign="middle">
-																												<a
-																													style={{
-																														color:
-																															"#23a1fd",
-																														fontSize:
-																															"13px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																														fontWeight:
-																															"normal",
-																														textTransform:
-																															"uppercase",
-																														textDecoration:
-																															"none"
-																													}}
-																													href={
-																														store
-																															.URLs[10]
-																															.URL +
-																														"?utm_campaign=" +
-																														store
-																															.URLs[10]
-																															.URLTitle +
-																														"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																													}>
-																													<strong>
-																														BUY
-																														TICKETS
-																													</strong>
-																												</a>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table-50"
-																			width="24%">
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px" }}>
-																					&nbsp;
-																				</td>
-																				<td
-																					align="center"
-																					style={{ padding: "0 0 0px 3px" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="140">
-																						<tr>
-																							<td
-																								align="right"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[11]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[11]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[11]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/140x215"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"140px",
-																											height:
-																												"auto"
-																										}}
-																										width="140"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									style={{
-																										collapse:
-																											"collapse"
-																									}}
-																									width="100%">
-																									<tbody>
-																										<tr>
-																											<td
-																												align="center"
-																												className="productcell"
-																												style={{
-																													color:
-																														"#000000",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													padding:
-																														"20px 0 20px 0"
-																												}}>
-																												{
-																													store
-																														.URLs[11]
-																														.title
-																												}
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												align="center"
-																												className="font16"
-																												style={{
-																													color:
-																														"#000034",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"'Lato', Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													textTransform:
-																														"none",
-																													padding:
-																														"0 10px 0 0"
-																												}}>
-																												<strong>
-																													<em
-																														style={{
-																															fontFamily:
-																																"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																														}}>
-																														from
-																													</em>{" "}
-																													$
-																													{
-																														store
-																															.URLs[11]
-																															.price
-																													}
-																												</strong>
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												height="60"
-																												align="center"
-																												valign="middle">
-																												<a
-																													style={{
-																														color:
-																															"#23a1fd",
-																														fontSize:
-																															"13px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																														fontWeight:
-																															"normal",
-																														textTransform:
-																															"uppercase",
-																														textDecoration:
-																															"none"
-																													}}
-																													href={
-																														store
-																															.URLs[11]
-																															.URL +
-																														"?utm_campaign=" +
-																														store
-																															.URLs[11]
-																															.URLTitle +
-																														"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																													}>
-																													<strong>
-																														BUY
-																														TICKETS
-																													</strong>
-																												</a>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table-50"
-																			width="24%">
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																				<td
-																					align="center"
-																					style={{ padding: "0 0 0px 3px" }}>
-																					<table
-																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="140">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION={
-																										store.URLs[12]
-																											.URLTitle
-																									}
-																									TARGET="_blank"
-																									href={
-																										store.URLs[12]
-																											.URL +
-																										"?utm_campaign=" +
-																										store.URLs[12]
-																											.URLTitle +
-																										"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																									}>
-																									<img
-																										alt="Don't Miss"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="https://via.placeholder.com/140x215"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"140px",
-																											height:
-																												"auto"
-																										}}
-																										width="140"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																						<tr>
-																							<td
-																								align="center"
-																								className="promo-padding">
-																								<table
-																									align="center"
-																									border="0"
-																									cellPadding="0"
-																									cellSpacing="0"
-																									style={{
-																										collapse:
-																											"collapse"
-																									}}
-																									width="100%">
-																									<tbody>
-																										<tr>
-																											<td
-																												align="center"
-																												className="productcell"
-																												style={{
-																													color:
-																														"#000000",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													padding:
-																														"20px 0 20px 0"
-																												}}>
-																												{
-																													store
-																														.URLs[12]
-																														.title
-																												}
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												align="center"
-																												className="font16"
-																												style={{
-																													color:
-																														"#000034",
-																													fontSize:
-																														"15px",
-																													fontFamily:
-																														"'Lato', Arial, Helvetica, sans-serif",
-																													fontWeight:
-																														"normal",
-																													textTransform:
-																														"none",
-																													padding:
-																														"0 10px 0 0"
-																												}}>
-																												<strong>
-																													<em
-																														style={{
-																															fontFamily:
-																																"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
-																														}}>
-																														from
-																													</em>{" "}
-																													$
-																													{
-																														store
-																															.URLs[12]
-																															.price
-																													}
-																												</strong>
-																											</td>
-																										</tr>
-																										<tr>
-																											<td
-																												height="60"
-																												align="center"
-																												valign="middle">
-																												<a
-																													style={{
-																														color:
-																															"#23a1fd",
-																														fontSize:
-																															"13px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																														fontWeight:
-																															"normal",
-																														textTransform:
-																															"uppercase",
-																														textDecoration:
-																															"none"
-																													}}
-																													href={
-																														store
-																															.URLs[12]
-																															.URL +
-																														"?utm_campaign=" +
-																														store
-																															.URLs[12]
-																															.URLTitle +
-																														"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
-																													}>
-																													<strong>
-																														BUY
-																														TICKETS
-																													</strong>
-																												</a>
-																											</td>
-																										</tr>
-																									</tbody>
-																								</table>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0 0 0px 3px" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#ffffff">&#160;</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table border="0" cellPadding="0" cellSpacing="0" width="100%">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2" className="section-padding">
-												<table
-													width="600"
-													border="0"
-													align="center"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table">
-													<tr>
-														<td bgcolor="#ffffff">
-															<table
-																align="center"
-																border="0"
-																cellPadding="0"
-																cellSpacing="0"
-																width="98%">
-																<tr>
-																	<td align="center" bgcolor="#ffffff" height="50">
-																		<table
-																			align="center"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			width="100%">
-																			<tbody>
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table-50"
+																				width="24%">
 																				<tr>
 																					<td
 																						align="center"
-																						className="mobile-hide"
-																						valign="middle"
-																						width="20%">
-																						<hr
-																							style={{
-																								width: "90%",
-																								display: "inline-block"
-																							}}
-																						/>
+																						style={{ padding: "0px" }}>
+																						&nbsp;
 																					</td>
 																					<td
 																						align="center"
-																						className="stack-column-center p-0"
 																						style={{
-																							fontFamily: "'Lato', Arial",
-																							fontSize: "22px",
-																							color: "#000034",
-																							wordWrap: "break-word",
-																							textTransform: "capitalize",
-																							style: "italic"
-																						}}
-																						width="60%">
-																						<strong>
-																							Select a city to see more
-																							deals
-																						</strong>
-																					</td>
-																					<td
-																						align="center"
-																						className="mobile-hide"
-																						valign="middle"
-																						width="20%">
-																						<hr
-																							style={{
-																								width: "90%",
-																								display: "inline-block"
-																							}}
-																						/>
+																							padding: "0 0 0px 3px"
+																						}}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="140">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[10]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[10]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[10]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/140x215"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"140px",
+																												height:
+																													"auto"
+																											}}
+																											width="140"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
+																										border="0"
+																										cellPadding="0"
+																										cellSpacing="0"
+																										style={{
+																											collapse:
+																												"collapse"
+																										}}
+																										width="100%">
+																										<tbody>
+																											<tr>
+																												<td
+																													align="center"
+																													className="productcell"
+																													style={{
+																														color:
+																															"#000000",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														padding:
+																															"20px 0 20px 0"
+																													}}>
+																													{
+																														store
+																															.URLs[10]
+																															.title
+																													}
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													align="center"
+																													className="font16"
+																													style={{
+																														color:
+																															"#000034",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"'Lato', Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														textTransform:
+																															"none",
+																														padding:
+																															"0 10px 0 0"
+																													}}>
+																													<strong>
+																														<em
+																															style={{
+																																fontFamily:
+																																	"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																															}}>
+																															from
+																														</em>{" "}
+																														$
+																														{
+																															store
+																																.URLs[10]
+																																.price
+																														}
+																													</strong>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													height="60"
+																													align="center"
+																													valign="middle">
+																													<a
+																														style={{
+																															color:
+																																"#23a1fd",
+																															fontSize:
+																																"13px",
+																															fontFamily:
+																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																															fontWeight:
+																																"normal",
+																															textTransform:
+																																"uppercase",
+																															textDecoration:
+																																"none"
+																														}}
+																														href={
+																															store
+																																.URLs[10]
+																																.URL +
+																															"?utm_campaign=" +
+																															store
+																																.URLs[10]
+																																.URLTitle +
+																															"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																														}>
+																														<strong>
+																															BUY
+																															TICKETS
+																														</strong>
+																													</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
 																					</td>
 																				</tr>
-																			</tbody>
-																		</table>
-																	</td>
-																</tr>
-																<tr>
-																	<td
-																		className="mobile-wrapper"
-																		style={{ padding: "0" }}
-																		valign="top">
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="33%">
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					<table
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table-50"
+																				width="24%">
+																				<tr>
+																					<td
 																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION="View Las Vegas Deals"
-																									TARGET="_blank"
-																									href="https://lasvegas.showtickets.com/?utm_campaign=Showtickets-Las-Vegas&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																									<img
-																										alt="View Las Vegas Deals"
-																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="http://images.delivery.net/cm50content/20483/15237/city-lasvegas.jpg"
-																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
-																										}}
-																										width="180"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px 0" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="left"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="33%">
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px" }}>
-																					<table
+																						style={{ padding: "0px" }}>
+																						&nbsp;
+																					</td>
+																					<td
 																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="left"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION="View New York Deals"
-																									TARGET="_blank"
-																									href="https://broadway.showtickets.com/?utm_campaign=Showtickets-New-York&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																									<img
-																										alt="View New York Deals"
+																						style={{
+																							padding: "0 0 0px 3px"
+																						}}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="140">
+																							<tr>
+																								<td
+																									align="right"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[11]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[11]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[11]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/140x215"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"140px",
+																												height:
+																													"auto"
+																											}}
+																											width="140"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
 																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="http://images.delivery.net/cm50content/20483/15237/city-new-york.jpg"
+																										cellPadding="0"
+																										cellSpacing="0"
 																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
+																											collapse:
+																												"collapse"
 																										}}
-																										width="93%"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td
-																					align="center"
-																					style={{ padding: "0px " }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																		<table
-																			align="right"
-																			border="0"
-																			cellPadding="0"
-																			cellSpacing="0"
-																			className="responsive-table"
-																			width="33%">
-																			<tr>
-																				<td style={{ padding: "0px" }}>
-																					<table
+																										width="100%">
+																										<tbody>
+																											<tr>
+																												<td
+																													align="center"
+																													className="productcell"
+																													style={{
+																														color:
+																															"#000000",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														padding:
+																															"20px 0 20px 0"
+																													}}>
+																													{
+																														store
+																															.URLs[11]
+																															.title
+																													}
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													align="center"
+																													className="font16"
+																													style={{
+																														color:
+																															"#000034",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"'Lato', Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														textTransform:
+																															"none",
+																														padding:
+																															"0 10px 0 0"
+																													}}>
+																													<strong>
+																														<em
+																															style={{
+																																fontFamily:
+																																	"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																															}}>
+																															from
+																														</em>{" "}
+																														$
+																														{
+																															store
+																																.URLs[11]
+																																.price
+																														}
+																													</strong>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													height="60"
+																													align="center"
+																													valign="middle">
+																													<a
+																														style={{
+																															color:
+																																"#23a1fd",
+																															fontSize:
+																																"13px",
+																															fontFamily:
+																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																															fontWeight:
+																																"normal",
+																															textTransform:
+																																"uppercase",
+																															textDecoration:
+																																"none"
+																														}}
+																														href={
+																															store
+																																.URLs[11]
+																																.URL +
+																															"?utm_campaign=" +
+																															store
+																																.URLs[11]
+																																.URLTitle +
+																															"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																														}>
+																														<strong>
+																															BUY
+																															TICKETS
+																														</strong>
+																													</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table-50"
+																				width="24%">
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																					<td
 																						align="center"
-																						border="0"
-																						cellPadding="0"
-																						cellSpacing="0"
-																						width="100%">
-																						<tr>
-																							<td
-																								align="right"
-																								bgcolor="#ffffff"
-																								valign="middle">
-																								<a
-																									ALT=""
-																									DESCRIPTION="View Orlando Deals"
-																									TARGET="_blank"
-																									href="https://orlando.showtickets.com/?utm_campaign=Showtickets-Orlando&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																									<img
-																										alt="View Orlando Deals"
+																						style={{
+																							padding: "0 0 0px 3px"
+																						}}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="140">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION={
+																											store
+																												.URLs[12]
+																												.URLTitle
+																										}
+																										TARGET="_blank"
+																										href={
+																											store
+																												.URLs[12]
+																												.URL +
+																											"?utm_campaign=" +
+																											store
+																												.URLs[12]
+																												.URLTitle +
+																											"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																										}>
+																										<img
+																											alt="Don't Miss"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="https://via.placeholder.com/140x215"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"140px",
+																												height:
+																													"auto"
+																											}}
+																											width="140"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td
+																									align="center"
+																									className="promo-padding">
+																									<table
+																										align="center"
 																										border="0"
-																										className="img-max"
-																										height="auto"
-																										src="http://images.delivery.net/cm50content/20483/15237/city-orlando.jpg"
+																										cellPadding="0"
+																										cellSpacing="0"
 																										style={{
-																											display:
-																												"block",
-																											color:
-																												"#515151",
-																											fontFamily:
-																												"Helvetica, arial, sans-serif",
-																											fontSize:
-																												"15px",
-																											width:
-																												"100%",
-																											height:
-																												"auto"
+																											collapse:
+																												"collapse"
 																										}}
-																										width="180"
-																									/>
-																								</a>
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																			<tr>
-																				<td style={{ padding: "0px" }}>
-																					&nbsp;
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#ffffff">&#160;</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<table border="0" cellPadding="0" cellSpacing="0" width="100%">
-										<tr>
-											<td align="center" bgcolor="#f2f2f2" style={{ padding: "0px 0px 0px 0px" }}>
-												<table
+																										width="100%">
+																										<tbody>
+																											<tr>
+																												<td
+																													align="center"
+																													className="productcell"
+																													style={{
+																														color:
+																															"#000000",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														padding:
+																															"20px 0 20px 0"
+																													}}>
+																													{
+																														store
+																															.URLs[12]
+																															.title
+																													}
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													align="center"
+																													className="font16"
+																													style={{
+																														color:
+																															"#000034",
+																														fontSize:
+																															"15px",
+																														fontFamily:
+																															"'Lato', Arial, Helvetica, sans-serif",
+																														fontWeight:
+																															"normal",
+																														textTransform:
+																															"none",
+																														padding:
+																															"0 10px 0 0"
+																													}}>
+																													<strong>
+																														<em
+																															style={{
+																																fontFamily:
+																																	"Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"
+																															}}>
+																															from
+																														</em>{" "}
+																														$
+																														{
+																															store
+																																.URLs[12]
+																																.price
+																														}
+																													</strong>
+																												</td>
+																											</tr>
+																											<tr>
+																												<td
+																													height="60"
+																													align="center"
+																													valign="middle">
+																													<a
+																														style={{
+																															color:
+																																"#23a1fd",
+																															fontSize:
+																																"13px",
+																															fontFamily:
+																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																															fontWeight:
+																																"normal",
+																															textTransform:
+																																"uppercase",
+																															textDecoration:
+																																"none"
+																														}}
+																														href={
+																															store
+																																.URLs[12]
+																																.URL +
+																															"?utm_campaign=" +
+																															store
+																																.URLs[12]
+																																.URLTitle +
+																															"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																														}>
+																														<strong>
+																															BUY
+																															TICKETS
+																														</strong>
+																													</a>
+																												</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="center"
+																						style={{
+																							padding: "0 0 0px 3px"
+																						}}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td bgcolor="#ffffff">&#160;</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+											<tr>
+												<td align="center" bgcolor="#f2f2f2" className="section-padding">
+													<table
+														width="600"
+														border="0"
+														align="center"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table">
+														<tr>
+															<td bgcolor="#ffffff">
+																<table
+																	align="center"
+																	border="0"
+																	cellPadding="0"
+																	cellSpacing="0"
+																	width="98%">
+																	<tr>
+																		<td
+																			align="center"
+																			bgcolor="#ffffff"
+																			height="50">
+																			<table
+																				align="center"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				width="100%">
+																				<tbody>
+																					<tr>
+																						<td
+																							align="center"
+																							className="mobile-hide"
+																							valign="middle"
+																							width="20%">
+																							<hr
+																								style={{
+																									width: "90%",
+																									display:
+																										"inline-block"
+																								}}
+																							/>
+																						</td>
+																						<td
+																							align="center"
+																							className="stack-column-center p-0"
+																							style={{
+																								fontFamily:
+																									"'Lato', Arial",
+																								fontSize: "22px",
+																								color: "#000034",
+																								wordWrap: "break-word",
+																								textTransform:
+																									"capitalize",
+																								style: "italic"
+																							}}
+																							width="60%">
+																							<strong>
+																								Select a city to see
+																								more deals
+																							</strong>
+																						</td>
+																						<td
+																							align="center"
+																							className="mobile-hide"
+																							valign="middle"
+																							width="20%">
+																							<hr
+																								style={{
+																									width: "90%",
+																									display:
+																										"inline-block"
+																								}}
+																							/>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td
+																			className="mobile-wrapper"
+																			style={{ padding: "0" }}
+																			valign="top">
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="33%">
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION="View Las Vegas Deals"
+																										TARGET="_blank"
+																										href="https://lasvegas.showtickets.com/?utm_campaign=Showtickets-Las-Vegas&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																										<img
+																											alt="View Las Vegas Deals"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="http://images.delivery.net/cm50content/20483/15237/city-lasvegas.jpg"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="180"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style={{ padding: "0px 0" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="left"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="33%">
+																				<tr>
+																					<td
+																						align="center"
+																						style={{ padding: "0px" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="left"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION="View New York Deals"
+																										TARGET="_blank"
+																										href="https://broadway.showtickets.com/?utm_campaign=Showtickets-New-York&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																										<img
+																											alt="View New York Deals"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="http://images.delivery.net/cm50content/20483/15237/city-new-york.jpg"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="93%"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td
+																						align="center"
+																						style={{ padding: "0px " }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																			<table
+																				align="right"
+																				border="0"
+																				cellPadding="0"
+																				cellSpacing="0"
+																				className="responsive-table"
+																				width="33%">
+																				<tr>
+																					<td style={{ padding: "0px" }}>
+																						<table
+																							align="center"
+																							border="0"
+																							cellPadding="0"
+																							cellSpacing="0"
+																							width="100%">
+																							<tr>
+																								<td
+																									align="right"
+																									bgcolor="#ffffff"
+																									valign="middle">
+																									<a
+																										ALT=""
+																										DESCRIPTION="View Orlando Deals"
+																										TARGET="_blank"
+																										href="https://orlando.showtickets.com/?utm_campaign=Showtickets-Orlando&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																										<img
+																											alt="View Orlando Deals"
+																											border="0"
+																											className="img-max"
+																											height="auto"
+																											src="http://images.delivery.net/cm50content/20483/15237/city-orlando.jpg"
+																											style={{
+																												display:
+																													"block",
+																												color:
+																													"#515151",
+																												fontFamily:
+																													"Helvetica, arial, sans-serif",
+																												fontSize:
+																													"15px",
+																												width:
+																													"100%",
+																												height:
+																													"auto"
+																											}}
+																											width="180"
+																										/>
+																									</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style={{ padding: "0px" }}>
+																						&nbsp;
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td bgcolor="#ffffff">&#160;</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table border="0" cellPadding="0" cellSpacing="0" width="100%">
+											<tr>
+												<td
 													align="center"
-													border="0"
-													cellPadding="0"
-													cellSpacing="0"
-													className="responsive-table"
-													width="600">
-													<tr>
-														<td
-															align="left"
-															bgcolor="#000034"
-															style={{
-																padding: "15px",
-																fontFamily: "Arial, Helvetica, sans-serif",
-																fontSize: "8pt"
-															}}>
-															<p style={{ color: "#999" }}>
-																Just a reminder that you&apos;re receiving this email
-																because you subscribed via our website or provided your
-																email during your last visit. You may{" "}
-																<cpt_cell_unique cell_id="0">
-																	<unsub>Unsub</unsub>
-																</cpt_cell_unique>
-																<a
-																	ALT=""
-																	style={{ textDecoration: "none", color: "#23a1fd" }}
-																	href="http://showtickets.p.delivery.net/m/u/ebg/st/n.asp?mid=<DI_MEMBER_ID/>&cid=<DI_CATALOG_ID/>">
-																	Unsubscribe
-																</a>{" "}
-																if you&apos;re no longer interested.{" "}
-															</p>
-															<p style={{ color: "#999" }}>
-																*Prices and Offers are subject to availability and
-																subject to change without notice. Please review the
-																terms and conditions for offers. Blackout dates may
-																apply. Offers have no cash value and become void if
-																qualifying booking is cancelled.
-															</p>
-															<p style={{ color: "#999" }}>
-																This email was sent by: ShowTickets - 1421 East Sunset
-																Road, Suite 4, Las Vegas, Nevada, 89119, USA
+													bgcolor="#f2f2f2"
+													style={{ padding: "0px 0px 0px 0px" }}>
+													<table
+														align="center"
+														border="0"
+														cellPadding="0"
+														cellSpacing="0"
+														className="responsive-table"
+														width="600">
+														<tr>
+															<td
+																align="left"
+																bgcolor="#000034"
+																style={{
+																	padding: "15px",
+																	fontFamily: "Arial, Helvetica, sans-serif",
+																	fontSize: "8pt"
+																}}>
+																<p style={{ color: "#999" }}>
+																	Just a reminder that you&apos;re receiving this
+																	email because you subscribed via our website or
+																	provided your email during your last visit. You may{" "}
+																	<cpt_cell_unique cell_id="0">
+																		<unsub>Unsub</unsub>
+																	</cpt_cell_unique>
+																	<a
+																		ALT=""
+																		style={{
+																			textDecoration: "none",
+																			color: "#23a1fd"
+																		}}
+																		href="http://showtickets.p.delivery.net/m/u/ebg/st/n.asp?mid=<DI_MEMBER_ID/>&cid=<DI_CATALOG_ID/>">
+																		Unsubscribe
+																	</a>{" "}
+																	if you&apos;re no longer interested.{" "}
+																</p>
+																<p style={{ color: "#999" }}>
+																	*Prices and Offers are subject to availability and
+																	subject to change without notice. Please review the
+																	terms and conditions for offers. Blackout dates may
+																	apply. Offers have no cash value and become void if
+																	qualifying booking is cancelled.
+																</p>
+																<p style={{ color: "#999" }}>
+																	This email was sent by: ShowTickets - 1421 East
+																	Sunset Road, Suite 4, Las Vegas, Nevada, 89119, USA
+																	<br />
+																	<a
+																		ALT=""
+																		style={{
+																			textDecoration: "none;color: #23a1fd"
+																		}}
+																		TARGET="_blank"
+																		href="http://www.showtickets.com/?utm_campaign=Footer-Link&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																		www.ShowTickets.com
+																	</a>{" "}
+																	&#160;&#160;|&#160;&#160;{" "}
+																	<a
+																		ALT=""
+																		style={{
+																			textDecoration: "none",
+																			color: "#23a1fd"
+																		}}
+																		TARGET="_blank"
+																		href="http://www.showtickets.com/pages/Privacy_Policy/?utm_campaign=Privacy_Policy_link&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																		Privacy Policy
+																	</a>{" "}
+																	&#160;&#160;|&#160;&#160;{" "}
+																	<a
+																		ALT=""
+																		style={{
+																			textDecoration: "none",
+																			color: "#23a1fd"
+																		}}
+																		href="http://showtickets.p.delivery.net/m/p/ebg/st/c.asp?mid=<DI_MEMBER_ID/>&cid=<DI_CATALOG_ID/>">
+																		Update Profile
+																	</a>
+																</p>
 																<br />
-																<a
-																	ALT=""
-																	style={{ textDecoration: "none;color: #23a1fd" }}
-																	TARGET="_blank"
-																	href="http://www.showtickets.com/?utm_campaign=Footer-Link&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																	www.ShowTickets.com
-																</a>{" "}
-																&#160;&#160;|&#160;&#160;{" "}
-																<a
-																	ALT=""
-																	style={{ textDecoration: "none", color: "#23a1fd" }}
-																	TARGET="_blank"
-																	href="http://www.showtickets.com/pages/Privacy_Policy/?utm_campaign=Privacy_Policy_link&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
-																	Privacy Policy
-																</a>{" "}
-																&#160;&#160;|&#160;&#160;{" "}
-																<a
-																	ALT=""
-																	style={{ textDecoration: "none", color: "#23a1fd" }}
-																	href="http://showtickets.p.delivery.net/m/p/ebg/st/c.asp?mid=<DI_MEMBER_ID/>&cid=<DI_CATALOG_ID/>">
-																	Update Profile
-																</a>
-															</p>
-															<br />
-															<p style={{ color: "#999" }}>
-																Questions? You can reach ShowTickets.com toll free at
-																1-800-838-8155 or 702-617-5513 (Int&apos;l).
-															</p>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
+																<p style={{ color: "#999" }}>
+																	Questions? You can reach ShowTickets.com toll free
+																	at 1-800-838-8155 or 702-617-5513 (Int&apos;l).
+																</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</body>
 								</html>
 							</div>
 							<div className="row justify-content-center pt-5">

@@ -73,7 +73,11 @@ export class Dashboard extends React.Component {
 									Generate Showtickets Editorial newsletter with your chosen products. Just enter the
 									URL!
 								</p>
-								<a href="#" className="btn btn-primary text-white">
+								<a
+									onClick={e => {
+										this.props.history.push("/ST-Editorial-submit");
+									}}
+									className="btn btn-primary text-white">
 									Generate ST Editorial Email Newsletter
 								</a>
 							</div>
