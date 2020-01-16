@@ -227,7 +227,7 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product6"
+													id="product8"
 													placeholder="URL for Orlando's Second Product Feature"
 													onChange={e => {
 														e.persist(
@@ -243,7 +243,7 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product7"
+													id="product9"
 													placeholder="URL for Orlando's 3rd Product Feature"
 													onChange={e => {
 														e.persist(
@@ -261,7 +261,7 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product8"
+													id="product10"
 													placeholder="URL for Recommended 1st Product Feature"
 													onChange={e => {
 														e.persist(
@@ -277,7 +277,7 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product9"
+													id="product11"
 													placeholder="URL for Recommended 2nd Product Feature"
 													onChange={e => {
 														e.persist(
@@ -295,7 +295,7 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product10"
+													id="product12"
 													placeholder="URL for Recommended 3rd Product Feature"
 													onChange={e => {
 														e.persist(
@@ -311,7 +311,7 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product11"
+													id="product13"
 													placeholder="URL for Recommended 4th Product Feature"
 													onChange={e => {
 														e.persist(

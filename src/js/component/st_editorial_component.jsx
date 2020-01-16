@@ -4318,7 +4318,7 @@ export class STEditorialComponent extends Component {
 									type="button"
 									className="btn btn-success login col-4 mr-2"
 									onClick={e => {
-										actions.sendSTPromoEmailToAPI(this.copyEmail());
+										actions.sendSTEditorialEmailToAPI(this.copyEmail());
 										this.downloadEmail();
 									}}>
 									Download
