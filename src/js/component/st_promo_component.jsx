@@ -4095,21 +4095,12 @@ export class PromoEmailComponent extends Component {
 							<div className="row justify-content-center pt-5">
 								<button
 									type="button"
-									className="btn btn-success login col-4 mr-2"
+									className="btn btn-success login col-6 mr-2"
 									onClick={e => {
 										actions.sendSTPromoEmailToAPI(this.copyEmail());
 										this.downloadEmail();
 									}}>
 									Download
-								</button>
-
-								<button
-									type="button"
-									className="btn btn-danger dashboard col-4 ml-2"
-									onClick={e => {
-										this.context.history.push("/dashboard");
-									}}>
-									Dashboard
 								</button>
 							</div>
 						</div>

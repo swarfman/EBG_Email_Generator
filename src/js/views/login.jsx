@@ -69,10 +69,10 @@ export class Login extends React.Component {
 									</form>
 								</div>
 							</div>
-							<div className="row d-flex justify-content-center pt-5">
+							<div className="row d-flex justify-content-between pt-5 pl-5 ml-5 mr-5 pr-5">
 								<button
 									type="button"
-									className="col-6 btn btn-success justify-content-center text-white"
+									className="col-4 btn btn-success justify-content-center text-white"
 									onClick={e => {
 										actions.login(this.state).then(e => {
 											if (e == true) {
@@ -84,6 +84,14 @@ export class Login extends React.Component {
 										// console.log(ls.get("password"));
 									}}>
 									Login
+								</button>
+								<button
+									type="button"
+									className="col-4 btn btn-primary justify-content-center text-white"
+									onClick={e => {
+										this.props.history.push("signup");
+									}}>
+									Signup
 								</button>
 							</div>
 						</div>

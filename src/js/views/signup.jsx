@@ -89,7 +89,7 @@ export class SignUp extends React.Component {
 									className="col-6 btn btn-success justify-content-center text-white"
 									onClick={e => {
 										actions.addUser(this.state);
-										this.props.history.push("/login");
+										this.props.history.push("/");
 									}}>
 									Login
 								</button>
