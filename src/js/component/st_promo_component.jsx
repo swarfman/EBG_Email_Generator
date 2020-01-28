@@ -32,7 +32,7 @@ export class PromoEmailComponent extends Component {
 		);
 		let addingHeaderStyling = almostMSO2.replace(
 			/<head>/g,
-			'<head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><meta content="width=device-width" name="viewport"/><style type="text/css">#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */ .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */ body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */ table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */ img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */ /* RESET STYLES */ body{margin:0; padding:0;} img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;} table{border-collapse:collapse !important;} body{height:100% !important; margin:0; padding:0; width:100% !important;} /* iOS BLUE LINKS */ .appleBody a {color:#68440a; text-decoration: none;} .appleFooter a {color:#999999; text-decoration: none;} /* MOBILE STYLES */ @media screen and (max-width: 525px) { /* ALLOWS FOR FLUID TABLES */ table[class="wrapper"]{ width:100% !important;} /* ADJUSTS LAYOUT OF LOGO IMAGE */ td[class="logo"]{ text-align: left; padding: 20px 0 20px 0 !important; } td[class="logo"] img{ margin:0 auto!important; } /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */ td[class="mobile-hide"]{ display:none;} img[class="mobile-hide"]{ display: none !important; } img[class="img-max"]{ max-width: 100% !important; height:auto !important; } /* FULL-WIDTH TABLES */ table[class="responsive-table"]{ width:100%!important; margin: 0 auto !important; padding: 0 !important; text-align: center !important; background-color: #ffffff!important;} /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */ td[class="padding"]{ padding: 10px 5% 15px 5% !important; } td[class="padding-copy"]{ padding: 0px 0% 0px 0% !important; text-align: center; } td[class="padding-meta"]{ padding: 30px 5% 0px 5% !important; text-align: center; } td[class="no-pad"]{ padding: 0 0 20px 0 !important; } td[class="no-padding"]{ padding: 0 !important; } td[class="promo-padding"]{ padding: 0px 5px 0 5px !important; } td[class="section-padding"]{ padding: 0px 0px 0px 0px !important; } td[class="section-padding-bottom-image"]{ padding: 0px 0px 0px 0px !important; } /* ADJUST BUTTONS ON MOBILE */ td[class="mobile-wrapper"]{ padding: 0px 0% 0px 0% !important; border: none !important} table[class="mobile-button-container"]{ margin:0 auto; width:100% !important; } a[class="mobile-button"]{ width:80% !important; padding: 15px !important; border: 0 !important; font-size: 16px !important; } table[class="responsive-table-50"] { margin: 0 auto !important; padding: 0 !important; text-align: center !important; width: 50% !important; } td[Class="date"]{ text-align: center!important; padding: 2px !important; margin:0 auto!important; } td[Class="City"]{ text-align: center!important; padding: 12px !important; margin:0 auto!important; } table[Class="productcell"]{ text-align: center!important; padding: 30px  0!important; margin:0 auto!important; } td[Class="productcell"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; font-size: 18px !important;} td[Class="font16"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; font-size: 18px!important;} } </style><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head>'
+			'<head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><meta content="width=device-width" name="viewport"/><style type="text/css"> .Title{color: #000000; font-size: 15px; font-family: "Lato", Arial, Helvetica, sans-serif; font-weight: bold; padding: 10px 0 10px 0;} .Subtext{color: #fc1d12; font-size: 15px; font-family: "Lato", Arial, Helvetica, sans-serif; font-weight: normal; padding: 5px 0 10px 0} .RecommendedTitle{color:rgb(0, 0, 0); font-family: "Lato", Arial, Helvetica, sans-serif; font-size: 15px; font-weight:normal; padding: 20px 0px 20px 0px;} #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */ .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */ body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */ table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */ img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */ /* RESET STYLES */ body{margin:0; padding:0;} img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;} table{border-collapse:collapse !important;} body{height:100% !important; margin:0; padding:0; width:100% !important;} /* iOS BLUE LINKS */ .appleBody a {color:#68440a; text-decoration: none;} .appleFooter a {color:#999999; text-decoration: none;} /* MOBILE STYLES */ @media screen and (max-width: 525px) { /* ALLOWS FOR FLUID TABLES */ table[class="wrapper"]{ width:100% !important;} /* ADJUSTS LAYOUT OF LOGO IMAGE */ td[class="logo"]{ text-align: left; padding: 20px 0 20px 0 !important; } td[class="logo"] img{ margin:0 auto!important; } /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */ td[class="mobile-hide"]{ display:none;} img[class="mobile-hide"]{ display: none !important; } img[class="img-max"]{ max-width: 100% !important; height:auto !important; } /* FULL-WIDTH TABLES */ table[class="responsive-table"]{ width:100%!important; margin: 0 auto !important; padding: 0 !important; text-align: center !important; background-color: #ffffff!important;} /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */ td[class="padding"]{ padding: 10px 5% 15px 5% !important; } td[class="padding-copy"]{ padding: 0px 0% 0px 0% !important; text-align: center; } td[class="padding-meta"]{ padding: 30px 5% 0px 5% !important; text-align: center; } td[class="no-pad"]{ padding: 0 0 20px 0 !important; } td[class="no-padding"]{ padding: 0 !important; } td[class="promo-padding"]{ padding: 0px 5px 0 5px !important; } td[class="section-padding"]{ padding: 0px 0px 0px 0px !important; } td[class="section-padding-bottom-image"]{ padding: 0px 0px 0px 0px !important; } /* ADJUST BUTTONS ON MOBILE */ td[class="mobile-wrapper"]{ padding: 0px 0% 0px 0% !important; border: none !important} table[class="mobile-button-container"]{ margin:0 auto; width:100% !important; } a[class="mobile-button"]{ width:80% !important; padding: 15px !important; border: 0 !important; font-size: 16px !important; } table[class="responsive-table-50"] { margin: 0 auto !important; padding: 0 !important; text-align: center !important; width: 50% !important; } td[Class="date"]{ text-align: center!important; padding: 2px !important; margin:0 auto!important; } td[Class="City"]{ text-align: center!important; padding: 12px !important; margin:0 auto!important; } table[Class="productcell"]{ text-align: center!important; padding: 30px  0!important; margin:0 auto!important; } td[Class="productcell"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; font-size: 18px !important;} td[Class="font16"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; font-size: 18px!important;} } </style><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head>'
 		);
 		let addingHTMLTag = addingHeaderStyling.replace(
 			/<html>/g,
@@ -761,24 +761,14 @@ export class PromoEmailComponent extends Component {
 																								<tr>
 																									<td
 																										align="left"
-																										className="productcell"
-																										style={{
-																											color:
-																												"#000000",
-																											fontSize:
-																												"15px",
-																											fontFamily:
-																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																											fontWeight:
-																												"normal;padding: 10px 0 10px 0"
-																										}}>
-																										<strong>
+																										className="productcell">
+																										<div className="Title">
 																											{
 																												store
 																													.URLs[2]
 																													.title
 																											}
-																										</strong>
+																										</div>
 																									</td>
 																								</tr>
 																								<tr>
@@ -797,11 +787,13 @@ export class PromoEmailComponent extends Component {
 																											padding:
 																												"0 0 10px 0"
 																										}}>
-																										{
-																											store
-																												.URLs[2]
-																												.subtext
-																										}
+																										<div className="Subtext">
+																											{
+																												store
+																													.URLs[2]
+																													.subtext
+																											}
+																										</div>
 																									</td>
 																								</tr>
 																							</tbody>
@@ -1070,26 +1062,14 @@ export class PromoEmailComponent extends Component {
 																								<tr>
 																									<td
 																										align="left"
-																										className="productcell"
-																										style={{
-																											color:
-																												"#000000",
-																											fontSize:
-																												"15px",
-																											fontFamily:
-																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																											fontWeight:
-																												"normal",
-																											padding:
-																												"10px 0 10px 0"
-																										}}>
-																										<strong>
+																										className="productcell">
+																										<div className="Title">
 																											{
 																												store
 																													.URLs[3]
 																													.title
 																											}
-																										</strong>
+																										</div>
 																									</td>
 																								</tr>
 																								<tr>
@@ -1108,11 +1088,13 @@ export class PromoEmailComponent extends Component {
 																											padding:
 																												"0 0 10px 0"
 																										}}>
-																										{
-																											store
-																												.URLs[3]
-																												.subtext
-																										}
+																										<div className="Subtext">
+																											{
+																												store
+																													.URLs[3]
+																													.subtext
+																											}
+																										</div>
 																									</td>
 																								</tr>
 																							</tbody>
@@ -1467,26 +1449,14 @@ export class PromoEmailComponent extends Component {
 																															<tr>
 																																<td
 																																	align="left"
-																																	className="productcell"
-																																	style={{
-																																		color:
-																																			"#000000",
-																																		fontSize:
-																																			"15px",
-																																		fontFamily:
-																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																		fontWeight:
-																																			"normal",
-																																		padding:
-																																			"10px 0 10px 0"
-																																	}}>
-																																	<strong>
+																																	className="productcell">
+																																	<div className="Title">
 																																		{
 																																			store
 																																				.URLs[4]
 																																				.title
 																																		}
-																																	</strong>
+																																	</div>
 																																</td>
 																															</tr>
 																															<tr>
@@ -1505,11 +1475,13 @@ export class PromoEmailComponent extends Component {
 																																		padding:
 																																			"0 0 10px 0"
 																																	}}>
-																																	{
-																																		store
-																																			.URLs[4]
-																																			.subtext
-																																	}
+																																	<div className="Subtext">
+																																		{
+																																			store
+																																				.URLs[4]
+																																				.subtext
+																																		}
+																																	</div>
 																																</td>
 																															</tr>
 																														</tbody>
@@ -1753,26 +1725,14 @@ export class PromoEmailComponent extends Component {
 																															<tr>
 																																<td
 																																	align="left"
-																																	className="productcell"
-																																	style={{
-																																		color:
-																																			"#000000",
-																																		fontSize:
-																																			"15px",
-																																		fontFamily:
-																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																		fontWeight:
-																																			"normal",
-																																		padding:
-																																			"10px 0 10px 0"
-																																	}}>
-																																	<strong>
+																																	className="productcell">
+																																	<div className="Title">
 																																		{
 																																			store
 																																				.URLs[5]
 																																				.title
 																																		}
-																																	</strong>
+																																	</div>
 																																</td>
 																															</tr>
 																															<tr>
@@ -1791,11 +1751,13 @@ export class PromoEmailComponent extends Component {
 																																		padding:
 																																			"0 0 10px 0"
 																																	}}>
-																																	{
-																																		store
-																																			.URLs[5]
-																																			.subtext
-																																	}
+																																	<div className="Subtext">
+																																		{
+																																			store
+																																				.URLs[5]
+																																				.subtext
+																																		}
+																																	</div>
 																																</td>
 																															</tr>
 																														</tbody>
@@ -2032,26 +1994,14 @@ export class PromoEmailComponent extends Component {
 																															<tr>
 																																<td
 																																	align="left"
-																																	className="productcell"
-																																	style={{
-																																		color:
-																																			"#000000",
-																																		fontSize:
-																																			"15px",
-																																		fontFamily:
-																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																		fontWeight:
-																																			"normal",
-																																		padding:
-																																			"10px 0 10px 0"
-																																	}}>
-																																	<strong>
+																																	className="productcell">
+																																	<div className="Title">
 																																		{
 																																			store
 																																				.URLs[6]
 																																				.title
 																																		}
-																																	</strong>
+																																	</div>
 																																</td>
 																															</tr>
 																															<tr>
@@ -2070,11 +2020,13 @@ export class PromoEmailComponent extends Component {
 																																		padding:
 																																			"0 0 10px 0"
 																																	}}>
-																																	{
-																																		store
-																																			.URLs[6]
-																																			.subtext
-																																	}
+																																	<div className="Subtext">
+																																		{
+																																			store
+																																				.URLs[6]
+																																				.subtext
+																																		}
+																																	</div>
 																																</td>
 																															</tr>
 																														</tbody>
@@ -2365,26 +2317,14 @@ export class PromoEmailComponent extends Component {
 																															<tr>
 																																<td
 																																	align="left"
-																																	className="productcell"
-																																	style={{
-																																		color:
-																																			"#000000",
-																																		fontSize:
-																																			"15px",
-																																		fontFamily:
-																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																		fontWeight:
-																																			"normal",
-																																		padding:
-																																			"10px 0 10px 0"
-																																	}}>
-																																	<strong>
+																																	className="productcell">
+																																	<div className="Title">
 																																		{
 																																			store
 																																				.URLs[7]
 																																				.title
 																																		}
-																																	</strong>
+																																	</div>
 																																</td>
 																															</tr>
 																															<tr>
@@ -2403,11 +2343,13 @@ export class PromoEmailComponent extends Component {
 																																		padding:
 																																			"0 0 10px 0"
 																																	}}>
-																																	{
-																																		store
-																																			.URLs[7]
-																																			.subtext
-																																	}
+																																	<div className="Subtext">
+																																		{
+																																			store
+																																				.URLs[7]
+																																				.subtext
+																																		}
+																																	</div>
 																																</td>
 																															</tr>
 																														</tbody>
@@ -2649,26 +2591,14 @@ export class PromoEmailComponent extends Component {
 																															<tr>
 																																<td
 																																	align="left"
-																																	className="productcell"
-																																	style={{
-																																		color:
-																																			"#000000",
-																																		fontSize:
-																																			"15px",
-																																		fontFamily:
-																																			"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
-																																		fontWeight:
-																																			"normal",
-																																		padding:
-																																			"10px 0 10px 0"
-																																	}}>
-																																	<strong>
+																																	className="productcell">
+																																	<div className="Title">
 																																		{
 																																			store
 																																				.URLs[8]
 																																				.title
 																																		}
-																																	</strong>
+																																	</div>
 																																</td>
 																															</tr>
 																															<tr>
@@ -2687,11 +2617,13 @@ export class PromoEmailComponent extends Component {
 																																		padding:
 																																			"0 0 10px 0"
 																																	}}>
-																																	{
-																																		store
-																																			.URLs[8]
-																																			.subtext
-																																	}
+																																	<div className="Subtext">
+																																		{
+																																			store
+																																				.URLs[8]
+																																				.subtext
+																																		}
+																																	</div>
 																																</td>
 																															</tr>
 																														</tbody>
@@ -3016,21 +2948,23 @@ export class PromoEmailComponent extends Component {
 																													className="productcell"
 																													style={{
 																														color:
-																															"#000000",
+																															"rgb(0, 0, 0)",
+																														fontFamily:
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontSize:
 																															"15px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														padding:
-																															"20px 0 20px 0"
+																															"20px 0px 20px 0px"
 																													}}>
-																													{
-																														store
-																															.URLs[9]
-																															.title
-																													}
+																													<div className="RecommendedTitle">
+																														{
+																															store
+																																.URLs[9]
+																																.title
+																														}
+																													</div>
 																												</td>
 																											</tr>
 																											<tr>
@@ -3080,7 +3014,7 @@ export class PromoEmailComponent extends Component {
 																															fontSize:
 																																"13px",
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																"Lato, Arial, Helvetica, sans-serif",
 																															fontWeight:
 																																"normal",
 																															textTransform:
@@ -3134,14 +3068,14 @@ export class PromoEmailComponent extends Component {
 																					<td
 																						align="center"
 																						style={{
-																							padding: "0 0 0px 3px"
+																							padding: "0px"
 																						}}>
 																						<table
 																							align="center"
 																							border="0"
 																							cellPadding="0"
 																							cellSpacing="0"
-																							width="140">
+																							width="120">
 																							<tr>
 																								<td
 																									align="left"
@@ -3211,21 +3145,23 @@ export class PromoEmailComponent extends Component {
 																													className="productcell"
 																													style={{
 																														color:
-																															"#000000",
+																															"rgb(0, 0, 0)",
+																														fontFamily:
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontSize:
 																															"15px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														padding:
-																															"20px 0 20px 0"
+																															"20px 0px 20px 0px"
 																													}}>
-																													{
-																														store
-																															.URLs[10]
-																															.title
-																													}
+																													<div className="RecommendedTitle">
+																														{
+																															store
+																																.URLs[10]
+																																.title
+																														}
+																													</div>
 																												</td>
 																											</tr>
 																											<tr>
@@ -3238,7 +3174,7 @@ export class PromoEmailComponent extends Component {
 																														fontSize:
 																															"15px",
 																														fontFamily:
-																															"'Lato', Arial, Helvetica, sans-serif",
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														textTransform:
@@ -3275,7 +3211,7 @@ export class PromoEmailComponent extends Component {
 																															fontSize:
 																																"13px",
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																"Lato, Arial, Helvetica, sans-serif",
 																															fontWeight:
 																																"normal",
 																															textTransform:
@@ -3319,7 +3255,7 @@ export class PromoEmailComponent extends Component {
 																				cellPadding="0"
 																				cellSpacing="0"
 																				className="responsive-table-50"
-																				width="24%">
+																				width="20%">
 																				<tr>
 																					<td
 																						align="center"
@@ -3336,7 +3272,7 @@ export class PromoEmailComponent extends Component {
 																							border="0"
 																							cellPadding="0"
 																							cellSpacing="0"
-																							width="140">
+																							width="120">
 																							<tr>
 																								<td
 																									align="right"
@@ -3406,21 +3342,23 @@ export class PromoEmailComponent extends Component {
 																													className="productcell"
 																													style={{
 																														color:
-																															"#000000",
+																															"rgb(0, 0, 0)",
+																														fontFamily:
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontSize:
 																															"15px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														padding:
-																															"20px 0 20px 0"
+																															"20px 0px 20px 0px"
 																													}}>
-																													{
-																														store
-																															.URLs[11]
-																															.title
-																													}
+																													<div className="RecommendedTitle">
+																														{
+																															store
+																																.URLs[11]
+																																.title
+																														}
+																													</div>
 																												</td>
 																											</tr>
 																											<tr>
@@ -3433,7 +3371,7 @@ export class PromoEmailComponent extends Component {
 																														fontSize:
 																															"15px",
 																														fontFamily:
-																															"'Lato', Arial, Helvetica, sans-serif",
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														textTransform:
@@ -3470,7 +3408,7 @@ export class PromoEmailComponent extends Component {
 																															fontSize:
 																																"13px",
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																"Lato, Arial, Helvetica, sans-serif",
 																															fontWeight:
 																																"normal",
 																															textTransform:
@@ -3514,7 +3452,7 @@ export class PromoEmailComponent extends Component {
 																				cellPadding="0"
 																				cellSpacing="0"
 																				className="responsive-table-50"
-																				width="24%">
+																				width="20%">
 																				<tr>
 																					<td style={{ padding: "0px 0" }}>
 																						&nbsp;
@@ -3522,14 +3460,14 @@ export class PromoEmailComponent extends Component {
 																					<td
 																						align="center"
 																						style={{
-																							padding: "0 0 0px 3px"
+																							padding: "0px"
 																						}}>
 																						<table
 																							align="center"
 																							border="0"
 																							cellPadding="0"
 																							cellSpacing="0"
-																							width="140">
+																							width="120">
 																							<tr>
 																								<td
 																									align="left"
@@ -3599,21 +3537,23 @@ export class PromoEmailComponent extends Component {
 																													className="productcell"
 																													style={{
 																														color:
-																															"#000000",
+																															"rgb(0, 0, 0)",
+																														fontFamily:
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontSize:
 																															"15px",
-																														fontFamily:
-																															"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														padding:
-																															"20px 0 20px 0"
+																															"20px 0px 20px 0px"
 																													}}>
-																													{
-																														store
-																															.URLs[12]
-																															.title
-																													}
+																													<div className="RecommendedTitle">
+																														{
+																															store
+																																.URLs[12]
+																																.title
+																														}
+																													</div>
 																												</td>
 																											</tr>
 																											<tr>
@@ -3626,7 +3566,7 @@ export class PromoEmailComponent extends Component {
 																														fontSize:
 																															"15px",
 																														fontFamily:
-																															"'Lato', Arial, Helvetica, sans-serif",
+																															"Lato, Arial, Helvetica, sans-serif",
 																														fontWeight:
 																															"normal",
 																														textTransform:
@@ -3663,7 +3603,7 @@ export class PromoEmailComponent extends Component {
 																															fontSize:
 																																"13px",
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif",
+																																"Lato, Arial, Helvetica, sans-serif",
 																															fontWeight:
 																																"normal",
 																															textTransform:
