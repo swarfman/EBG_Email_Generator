@@ -96,7 +96,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -112,7 +112,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -130,7 +130,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -146,7 +146,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -164,7 +164,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -180,7 +180,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -198,7 +198,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -214,7 +214,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -232,7 +232,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -248,7 +248,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -266,7 +266,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -282,7 +282,7 @@ export class Submit extends React.Component {
 													onChange={e => {
 														e.persist(
 															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}

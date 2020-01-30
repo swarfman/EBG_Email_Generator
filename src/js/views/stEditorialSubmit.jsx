@@ -32,8 +32,10 @@ export class STEditorialSubmit extends React.Component {
 		}
 	};
 
-	scrapeWebPage = async (e, subtextFunction) => {
+	scrapeProductWebPage = async (e, subtextFunction) => {
 		let webScrapeObject = {};
+		//console.log(e);
+
 		return await fetch(e.target.value)
 			.then(response => {
 				let newResponse = response.text();
@@ -86,7 +88,8 @@ export class STEditorialSubmit extends React.Component {
 											<p className="text-muted">The future is here.</p>
 										</div>
 										<div className="form-row">
-											<div className="form-group col-md-6">
+											<h5>Main Feature</h5>
+											<div className="form-group col-md-12">
 												<label htmlFor="inputName">Blog/Hero Feature</label>
 												<input
 													type="text"
@@ -95,13 +98,35 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Blog Article Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
+										</div>
+										<h5 className="pt-5">New York</h5>
+										<div className="form-row">
+											<div className="form-group col-md-6">
+												<label htmlFor="inputName">
+													<em>New York Article</em>
+												</label>
+												<input
+													type="text"
+													className="form-control"
+													id="New-York-Article"
+													placeholder="URL for New York Article"
+													onChange={e => {
+														e.persist(
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
+															})
+														);
+													}}
+												/>
+											</div>
+
 											<div className="form-group col-md-6">
 												<label htmlFor="inputName">New York First Product Feature</label>
 												<input
@@ -111,8 +136,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for New York's 1st Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -129,13 +154,14 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for NY 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
+
 											<div className="form-group col-md-6">
 												<label htmlFor="inputPassword6">New York Third Product Feature</label>
 												<input
@@ -145,8 +171,46 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for New York's 3rd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
+															})
+														);
+													}}
+												/>
+											</div>
+										</div>
+										<h5 className="pt-5">Las Vegas</h5>
+										<div className="form-row">
+											<div className="form-group col-md-6">
+												<label htmlFor="inputName">
+													<em>Las Vegas Article</em>
+												</label>
+												<input
+													type="text"
+													className="form-control"
+													id="Las-Vegas-Article"
+													placeholder="URL for Las Vegas Article"
+													onChange={e => {
+														e.persist(
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
+															})
+														);
+													}}
+												/>
+											</div>
+
+											<div className="form-group col-md-6">
+												<label htmlFor="inputName">Las Vegas First Product Feature</label>
+												<input
+													type="text"
+													className="form-control"
+													id="product1"
+													placeholder="URL for Las Vegas' 1st Product Feature"
+													onChange={e => {
+														e.persist(
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -155,23 +219,7 @@ export class STEditorialSubmit extends React.Component {
 										</div>
 										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Vegas First Product Feature</label>
-												<input
-													type="text"
-													className="form-control"
-													id="product4"
-													placeholder="URL for Vegas 1st Product Feature"
-													onChange={e => {
-														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
-															})
-														);
-													}}
-												/>
-											</div>
-											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Vegas Second Product Feature</label>
+												<label htmlFor="inputPhone4">Las Vegas Second Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
@@ -179,17 +227,16 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Vegas' 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
-										</div>
-										<div className="form-row">
+
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Vegas Third Product Feature</label>
+												<label htmlFor="inputPhone4">Las Vegas Third Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
@@ -197,24 +244,46 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Vegas' Third Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
+										</div>
+										<h5 className="pt-5">Orlando</h5>
+										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Orlando First Product Feature</label>
+												<label htmlFor="inputName">
+													<em>Orlando Article</em>
+												</label>
 												<input
 													type="text"
 													className="form-control"
-													id="product7"
+													id="Las-Vegas-Article"
+													placeholder="URL for Orlando Article"
+													onChange={e => {
+														e.persist(
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
+															})
+														);
+													}}
+												/>
+											</div>
+
+											<div className="form-group col-md-6">
+												<label htmlFor="inputName">Orlando First Product Feature</label>
+												<input
+													type="text"
+													className="form-control"
+													id="product1"
 													placeholder="URL for Orlando's 1st Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -227,62 +296,65 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product8"
-													placeholder="URL for Orlando's Second Product Feature"
+													id="product5"
+													placeholder="URL for Orlando's 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
+
 											<div className="form-group col-md-6">
 												<label htmlFor="inputPhone4">Orlando Third Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
-													id="product9"
-													placeholder="URL for Orlando's 3rd Product Feature"
+													id="product6"
+													placeholder="URL for Orlando's Third Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
 										</div>
+										<h5 className="pt-5">Recommended For You</h5>
 										<div className="form-row">
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Recommended First Product Feature</label>
+												<label htmlFor="inputName">Recommended For You First Product</label>
 												<input
 													type="text"
 													className="form-control"
-													id="product10"
-													placeholder="URL for Recommended 1st Product Feature"
+													id="Recommended-Article-1"
+													placeholder="URL for Recommended First Product"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
+
 											<div className="form-group col-md-6">
-												<label htmlFor="inputPhone4">Recommended Second Product Feature</label>
+												<label htmlFor="inputName">Recommended Second Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
-													id="product11"
+													id="Recommended-Article-2"
 													placeholder="URL for Recommended 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
@@ -295,28 +367,29 @@ export class STEditorialSubmit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="product12"
+													id="Recommended-Article-3"
 													placeholder="URL for Recommended 3rd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
 												/>
 											</div>
+
 											<div className="form-group col-md-6">
 												<label htmlFor="inputPhone4">Recommended Fourth Product Feature</label>
 												<input
 													type="text"
 													className="form-control"
-													id="product13"
-													placeholder="URL for Recommended 4th Product Feature"
+													id="Recommended-Article-4"
+													placeholder="URL for Recommended Fourth Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeWebPage(e).then(scraped => {
-																actions.setURLInformation(scraped);
+															this.scrapeProductWebPage(e).then(scraped => {
+																actions.pushProductObjectToStore(scraped);
 															})
 														);
 													}}
