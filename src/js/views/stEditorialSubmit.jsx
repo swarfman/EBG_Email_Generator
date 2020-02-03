@@ -31,46 +31,83 @@ export class STEditorialSubmit extends React.Component {
 			return almostSubtext.substring(0, 14);
 		}
 	};
-
-	scrapeProductWebPage = async (e, subtextFunction) => {
+	//SCRAPES NECESSARY INFORMATION ON WEBPAGE, PUSHES TO STORE FOR RENDER ON NEXT PAGE IN EMAIL
+	scrapeWebPage = async (e, subtextFunction) => {
 		let webScrapeObject = {};
-		//console.log(e);
+		//CHECK IF PAGE IS ARTICLE OR PRODUCT PAGE
+		if (e.target.value.includes("articles")) {
+			return await fetch(e.target.value)
+				.then(response => {
+					let newResponse = response.text();
+					//console.log(newResponse);
+					return newResponse;
+				})
+				.then(newResponse => {
+					//console.log(newResponse);
+					const url = e.target.value;
 
-		return await fetch(e.target.value)
-			.then(response => {
-				let newResponse = response.text();
-				//console.log(newResponse);
-				return newResponse;
-			})
-			.then(newResponse => {
-				//console.log(newResponse);
-				const url = e.target.value;
+					webScrapeObject.URL = url;
 
-				webScrapeObject.URL = url;
+					var title = newResponse.match(/<h1 itemprop="headline" class="semi-bold">(.*?)<\/h1>/)[1];
+					webScrapeObject.title = title;
 
-				var title = newResponse.match(/<h1 class="semi-bold h1">(.*?)<\/h1>/)[1];
-				webScrapeObject.title = title;
+					// Adjust title in URL Google Analytics UTM tracking campaigns.
+					let URLTitle = title.replace(/ /g, "-");
+					webScrapeObject.URLTitle = URLTitle;
 
-				// Adjust title in URL Google Analytics UTM tracking campaigns.
-				let URLTitle = title.replace(/ /g, "-");
-				webScrapeObject.URLTitle = URLTitle;
+					let regex = new RegExp('<h2 class="semi-bold article-header margintop0">(.*)</h2>', "s");
 
-				let regex = new RegExp('<span class="h5 promo-text semi-bold orange">(.*)</span>', "s");
+					let almostSubtext = newResponse.match(regex)[1];
+					let subtext = almostSubtext.substring(0, 26) + "...";
 
-				let almostSubtext = newResponse.match(regex)[1];
+					webScrapeObject.subtext = subtext;
 
-				let subtext = this.subtextFunction(almostSubtext);
-				webScrapeObject.subtext = subtext;
+					let almostImageAddress = newResponse.match(/<img src="(.*)600.jpg"/)[1];
+					let imageAddress = almostImageAddress + "600.jpg";
+					webScrapeObject.imageAddress = imageAddress;
 
-				let almostPrice = newResponse.match(/<span class="price bold">(.*)<\/span>/)[1];
-				let price = almostPrice.substring(27, 30);
+					// webScrapeObject.imageAddress = "https://via.placeholder.com/300x140";
+					console.log(webScrapeObject);
+					return webScrapeObject;
+				});
+		} else {
+			return await fetch(e.target.value)
+				.then(response => {
+					let newResponse = response.text();
+					//console.log(newResponse);
+					return newResponse;
+				})
+				.then(newResponse => {
+					//console.log(newResponse);
+					const url = e.target.value;
 
-				webScrapeObject.price = price;
+					webScrapeObject.URL = url;
 
-				webScrapeObject.imageAddress = "https://via.placeholder.com/300x140";
-				console.log(webScrapeObject);
-				return webScrapeObject;
-			});
+					var title = newResponse.match(/<h1 class="semi-bold h1">(.*?)<\/h1>/)[1];
+					webScrapeObject.title = title;
+
+					// Adjust title in URL Google Analytics UTM tracking campaigns.
+					let URLTitle = title.replace(/ /g, "-");
+					webScrapeObject.URLTitle = URLTitle;
+
+					let regex = new RegExp('<span class="h5 promo-text semi-bold orange">(.*)</span>', "s");
+
+					let almostSubtext = newResponse.match(regex)[1];
+
+					let subtext = this.subtextFunction(almostSubtext);
+					webScrapeObject.subtext = subtext;
+
+					let almostPrice = newResponse.match(/<span class="price bold">(.*)<\/span>/)[1];
+					let price = almostPrice.substring(27, 30);
+
+					webScrapeObject.price = price;
+
+					webScrapeObject.imageAddress = "https://via.placeholder.com/300x140";
+					console.log(webScrapeObject);
+					return webScrapeObject;
+				});
+		}
+		//if (e.target.value.substring())
 	};
 
 	render() {
@@ -98,8 +135,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Blog Article Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -119,8 +156,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for New York Article"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -136,8 +173,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for New York's 1st Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -154,8 +191,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for NY 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -171,8 +208,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for New York's 3rd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -192,8 +229,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Las Vegas Article"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -209,8 +246,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Las Vegas' 1st Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -227,8 +264,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Vegas' 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -244,8 +281,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Vegas' Third Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -265,8 +302,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Orlando Article"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -282,8 +319,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Orlando's 1st Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -300,8 +337,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Orlando's 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -317,8 +354,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Orlando's Third Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -336,8 +373,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Recommended First Product"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -353,8 +390,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Recommended 2nd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -371,8 +408,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Recommended 3rd Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}
@@ -388,8 +425,8 @@ export class STEditorialSubmit extends React.Component {
 													placeholder="URL for Recommended Fourth Product Feature"
 													onChange={e => {
 														e.persist(
-															this.scrapeProductWebPage(e).then(scraped => {
-																actions.pushProductObjectToStore(scraped);
+															this.scrapeWebPage(e).then(scraped => {
+																actions.pushWebObjectToStore(scraped);
 															})
 														);
 													}}

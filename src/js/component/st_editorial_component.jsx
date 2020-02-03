@@ -32,7 +32,7 @@ export class STEditorialComponent extends Component {
 		);
 		let addingHeaderStyling = almostMSO2.replace(
 			/<head>/g,
-			'<head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><meta content="width=device-width" name="viewport"/><style type="text/css">#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */ .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {lineHeight: 100%;} /* Force Hotmail to display normal line spacing */ body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */ table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */ img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */ /* RESET STYLES */ body{margin:0; padding:0;} img{border:0; height:auto; lineHeight:100%; outline:none; textDecoration:none;} table{borderCollapse:collapse !important;} body{height:100% !important; margin:0; padding:0; width:100% !important;} /* iOS BLUE LINKS */ .appleBody a {color:#68440a; textDecoration: none;} .appleFooter a {color:#999999; textDecoration: none;} /* MOBILE STYLES */ @media screen and (max-width: 525px) { /* ALLOWS FOR FLUID TABLES */ table[class="wrapper"]{ width:100% !important;} /* ADJUSTS LAYOUT OF LOGO IMAGE */ td[class="logo"]{ text-align: left; padding: 20px 0 20px 0 !important; } td[class="logo"] img{ margin:0 auto!important; } /* USE THESE classNameES TO HIDE CONTENT ON MOBILE */ td[class="mobile-hide"]{ display:none;} img[class="mobile-hide"]{ display: none !important; } img[class="img-max"]{ max-width: 100% !important; height:auto !important; } /* FULL-WIDTH TABLES */ table[class="responsive-table"]{ width:100%!important; margin: 0 auto !important; padding: 0 !important; text-align: center !important; background-color: #ffffff!important;} /* UTILITY classNameES FOR ADJUSTING PADDING ON MOBILE */ td[class="padding"]{ padding: 10px 5% 15px 5% !important; } td[class="padding-copy"]{ padding: 0px 0% 0px 0% !important; text-align: center; } td[class="padding-meta"]{ padding: 30px 5% 0px 5% !important; text-align: center; } td[class="no-pad"]{ padding: 0 0 20px 0 !important; } td[class="no-padding"]{ padding: 0 !important; } td[class="promo-padding"]{ padding: 0px 5px 0 5px !important; } td[class="section-padding"]{ padding: 0px 0px 0px 0px !important; } td[class="section-padding-bottom-image"]{ padding: 0px 0px 0px 0px !important; } /* ADJUST BUTTONS ON MOBILE */ td[class="mobile-wrapper"]{ padding: 0px 0% 0px 0% !important; border: none !important} table[class="mobile-button-container"]{ margin:0 auto; width:100% !important; } a[class="mobile-button"]{ width:80% !important; padding: 15px !important; border: 0 !important; fontSize: 16px !important; } table[class="responsive-table-50"] { margin: 0 auto !important; padding: 0 !important; text-align: center !important; width: 50% !important; } td[Class="date"]{ text-align: center!important; padding: 2px !important; margin:0 auto!important; } td[Class="City"]{ text-align: center!important; padding: 12px !important; margin:0 auto!important; } table[Class="productcell"]{ text-align: center!important; padding: 30px  0!important; margin:0 auto!important; } td[Class="productcell"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; fontSize: 18px !important;} td[Class="font16"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; fontSize: 18px!important;} } </style><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head>'
+			'<head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><meta content="width=device-width" name="viewport"/><style type="text/css">#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */ .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {lineHeight: 100%;} /* Force Hotmail to display normal line spacing */ body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */ table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */ img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */ /* RESET STYLES */ body{margin:0; padding:0;} img{border:0; height:auto; lineHeight:100%; outline:none; textDecoration:none;} table{borderCollapse:collapse !important;} body{height:100% !important; margin:0; padding:0; width:100% !important;} /* iOS BLUE LINKS */ .appleBody a {color:#68440a; textDecoration: none;} .appleFooter a {color:#999999; textDecoration: none;} /* MOBILE STYLES */ @media screen and (max-width: 525px) { /* ALLOWS FOR FLUID TABLES */ table[class="wrapper"]{ width:100% !important;} /* ADJUSTS LAYOUT OF LOGO IMAGE */ td[class="logo"]{ text-align: left; padding: 20px 0 20px 0 !important; } td[class="logo"] img{ margin:0 auto!important; } /* USE THESE classNameES TO HIDE CONTENT ON MOBILE */ td[class="mobile-hide"]{ display:none;} img[class="mobile-hide"]{ display: none !important; } img[class="img-max"]{ max-width: 100% !important; height:auto !important; } /* FULL-WIDTH TABLES */ table[class="responsive-table"]{ width:100%!important; margin: 0 auto !important; padding: 0 !important; text-align: center !important; background-color: #ffffff!important;} /* UTILITY classNameES FOR ADJUSTING PADDING ON MOBILE */ td[class="padding"]{ padding: 10px 5% 15px 5% !important; } td[class="padding-copy"]{ padding: 0px 0% 0px 0% !important; text-align: center; } td[class="padding-meta"]{ padding: 30px 5% 0px 5% !important; text-align: center; } td[class="no-pad"]{ padding: 0 0 20px 0 !important; } td[class="no-padding"]{ padding: 0 !important; } td[class="promo-padding"]{ padding: 0px 5px 0 5px !important; } td[class="section-padding"]{ padding: 0px 0px 0px 0px !important; } td[class="section-padding-bottom-image"]{ padding: 0px 0px 0px 0px !important; } /* ADJUST BUTTONS ON MOBILE */ td[class="mobile-wrapper"]{ padding: 0px 0% 0px 0% !important; border: none !important} table[class="mobile-button-container"]{ margin:0 auto; width:100% !important; } a[class="mobile-button"]{ width:80% !important; padding: 15px !important; border: 0 !important; fontSize: 16px !important; } table[class="responsive-table-50"] { margin: 0 auto !important; padding: 0 !important; text-align: center !important; width: 50% !important; } td[Class="date"]{ text-align: center!important; padding: 2px !important; margin:0 auto!important; } td[Class="City"]{ text-align: center!important; padding: 12px !important; margin:0 auto!important; } table[Class="productcell"]{ text-align: center!important; padding: 30px  0!important; margin:0 auto!important; } td[Class="productcell"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; fontSize: 18px !important;} td[Class="font16"]{ text-align: center!important; padding: 5px !important; margin:0 auto!important; fontSize: 18px!important; color: #fc1d12;} } </style><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head>'
 		);
 		let addingHTMLTag = addingHeaderStyling.replace(
 			/<html>/g,
@@ -395,7 +395,7 @@ export class STEditorialComponent extends Component {
 																																			fontSize:
 																																				"22px",
 																																			fontFamily:
-																																				"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																				"Lato, Arial, Helvetica, sans-serif;",
 																																			fontWeight:
 																																				"normal",
 																																			textTransform:
@@ -529,7 +529,7 @@ export class STEditorialComponent extends Component {
 																														align="left"
 																														style={{
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial;",
+																																"Lato, Arial;",
 																															fontSize:
 																																"16px",
 																															color:
@@ -597,12 +597,29 @@ export class STEditorialComponent extends Component {
 																																			ALT=""
 																																			DESCRIPTION="what-to-do-new-york-city-january-2020"
 																																			TARGET="_blank"
-																																			href="https://broadway.showtickets.com/articles/what-to-do-new-york-city-january-2020/?utm_campaign=what-to-do-new-york-city-january-2020-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																																			href={
+																																				store
+																																					.URLs[2]
+																																					.URL +
+																																				"?utm_campaign=" +
+																																				store
+																																					.URLs[2]
+																																					.URLTitle +
+																																				"-image&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																			}>
 																																			<img
-																																				alt="what-to-do-new-york-city-january-2020"
+																																				alt={
+																																					store
+																																						.URLs[2]
+																																						.URLTitle
+																																				}
 																																				className="w300"
 																																				height="auto"
-																																				src="images/girl-hat-bridge-nyc-600.jpg"
+																																				src={
+																																					store
+																																						.URLs[2]
+																																						.imageAddress
+																																				}
 																																				style={{
 																																					display:
 																																						"block",
@@ -639,23 +656,18 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"16px",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal;",
 																																							textTransform:
 																																								"uppercase"
 																																						}}>
 																																						<strong>
-																																							What
-																																							to
-																																							Do
-																																							in
-																																							New
-																																							York
-																																							City
-																																							in
-																																							January
-																																							2020
+																																							{
+																																								store
+																																									.URLs[2]
+																																									.title
+																																							}
 																																						</strong>
 																																					</td>
 																																				</tr>
@@ -669,21 +681,18 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"13px;",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal"
 																																						}}>
-																																						Including
-																																						BroadwayCon,
-																																						a
-																																						food
-																																						festival
-																																						and
-																																						more
+																																						{
+																																							store
+																																								.URLs[2]
+																																								.subtext
+																																						}
 																																						<br />
 																																						<a
 																																							ALT=""
-																																							DESCRIPTION="what-to-do-new-york-city-january-2020"
 																																							style={{
 																																								fontStyle:
 																																									"normal;",
@@ -695,7 +704,16 @@ export class STEditorialComponent extends Component {
 																																									"block;"
 																																							}}
 																																							TARGET="_blank"
-																																							href="https://broadway.showtickets.com/articles/what-to-do-new-york-city-january-2020/?utm_campaign=what-to-do-new-york-city-january-2020-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																																							href={
+																																								store
+																																									.URLs[2]
+																																									.URL +
+																																								"?utm_campaign=" +
+																																								store
+																																									.URLs[2]
+																																									.URLTitle +
+																																								"-read-more&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																							}>
 																																							{" "}
 																																							Read
 																																							more
@@ -771,11 +789,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[2]
+																																													.URLs[3]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[2]
+																																													.URLs[3]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -830,7 +848,7 @@ export class STEditorialComponent extends Component {
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[2]
+																																																	.URLs[3]
 																																																	.title
 																																															}
 																																														</strong>
@@ -850,11 +868,23 @@ export class STEditorialComponent extends Component {
 																																															fontWeight:
 																																																"normal"
 																																														}}>
-																																														{
-																																															store
-																																																.URLs[2]
-																																																.subtext
-																																														}
+																																														<div
+																																															style={{
+																																																color:
+																																																	"#fc1d12",
+																																																fontSize:
+																																																	"13px",
+																																																fontFamily:
+																																																	"'Lato', Arial, Helvetica, sans-serif",
+																																																fontWeight:
+																																																	"normal"
+																																															}}>
+																																															{
+																																																store
+																																																	.URLs[3]
+																																																	.subtext
+																																															}
+																																														</div>
 																																													</td>
 																																												</tr>
 																																											</tbody>
@@ -872,7 +902,7 @@ export class STEditorialComponent extends Component {
 																																											fontSize:
 																																												"13px;",
 																																											fontFamily:
-																																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																												"Lato, Arial, Helvetica, sans-serif;",
 																																											fontWeight:
 																																												"normal;",
 																																											textTransform:
@@ -891,7 +921,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[2]
+																																													.URLs[3]
 																																													.price
 																																											}
 																																										</strong>
@@ -908,11 +938,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[2]
+																																													.URLs[3]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[2]
+																																													.URLs[3]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -954,11 +984,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[3]
+																																													.URLs[4]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[3]
+																																													.URLs[4]
 																																													.title +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1006,14 +1036,14 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[3]
+																																																	.URLs[4]
 																																																	.title
 																																															}
 																																														</strong>
@@ -1029,7 +1059,7 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
@@ -1047,7 +1077,7 @@ export class STEditorialComponent extends Component {
 																																															}}>
 																																															{
 																																																store
-																																																	.URLs[3]
+																																																	.URLs[4]
 																																																	.subtext
 																																															}
 																																														</span>
@@ -1068,7 +1098,7 @@ export class STEditorialComponent extends Component {
 																																											fontSize:
 																																												"13px;",
 																																											fontFamily:
-																																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																												"Lato, Arial, Helvetica, sans-serif;",
 																																											fontWeight:
 																																												"normal;",
 																																											textTransform:
@@ -1087,7 +1117,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[3]
+																																													.URLs[4]
 																																													.price
 																																											}
 																																										</strong>
@@ -1104,11 +1134,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[3]
+																																													.URLs[4]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[3]
+																																													.URLs[4]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1150,11 +1180,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[4]
+																																													.URLs[5]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[4]
+																																													.URLs[5]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1202,14 +1232,14 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal;"
 																																														}}>
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[4]
+																																																	.URLs[5]
 																																																	.title
 																																															}
 																																														</strong>
@@ -1231,7 +1261,7 @@ export class STEditorialComponent extends Component {
 																																														}}>
 																																														{
 																																															store
-																																																.URLs[4]
+																																																.URLs[5]
 																																																.subtext
 																																														}
 																																													</td>
@@ -1251,7 +1281,7 @@ export class STEditorialComponent extends Component {
 																																											fontSize:
 																																												"13px;",
 																																											fontFamily:
-																																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																												"Lato, Arial, Helvetica, sans-serif;",
 																																											fontWeight:
 																																												"normal;",
 																																											textTransform:
@@ -1270,7 +1300,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[4]
+																																													.URLs[5]
 																																													.price
 																																											}
 																																										</strong>
@@ -1287,11 +1317,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[4]
+																																													.URLs[5]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[4]
+																																													.URLs[5]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1365,13 +1395,13 @@ export class STEditorialComponent extends Component {
 																														align="left"
 																														style={{
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial;",
+																																"Lato, Arial;",
 																															fontSize:
-																																"16px;",
+																																"16px",
 																															color:
-																																"#ffffff;",
+																																"#ffffff",
 																															wordWrap:
-																																"break-word;",
+																																"break-word",
 																															textTransform:
 																																"uppercase"
 																														}}
@@ -1431,14 +1461,26 @@ export class STEditorialComponent extends Component {
 																																		width="210">
 																																		<a
 																																			ALT=""
-																																			DESCRIPTION="best-vegas-shows-couples"
 																																			TARGET="_blank"
-																																			href="https://lasvegas.showtickets.com/articles/best-vegas-shows-couples/?utm_campaign=best-vegas-shows-couples-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																																			href={
+																																				store
+																																					.URLs[6]
+																																					.URL +
+																																				"?utm_campaign=" +
+																																				store
+																																					.URLs[6]
+																																					.URLTitle +
+																																				"-image&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																			}>
 																																			<img
 																																				alt="best-vegas-shows-couples"
 																																				className="w300"
 																																				height="auto"
-																																				src="images/le-reve-the-dream-600X400.jpg"
+																																				src={
+																																					store
+																																						.URLs[6]
+																																						.imageAddress
+																																				}
 																																				style={{
 																																					display:
 																																						"block;",
@@ -1475,19 +1517,18 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"16px;",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal;",
 																																							textTransform:
 																																								"uppercase"
 																																						}}>
 																																						<strong>
-																																							10
-																																							Best
-																																							Vegas
-																																							Shows
-																																							for
-																																							Couples{" "}
+																																							{
+																																								store
+																																									.URLs[6]
+																																									.title
+																																							}{" "}
 																																						</strong>
 																																					</td>
 																																				</tr>
@@ -1501,22 +1542,15 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"13px;",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal"
 																																						}}>
-																																						From
-																																						romantic
-																																						to
-																																						sexy,
-																																						Vegas
-																																						has
-																																						a
-																																						show
-																																						to
-																																						please
-																																						every
-																																						pair
+																																						{
+																																							store
+																																								.URLs[6]
+																																								.subtext
+																																						}
 																																						<br />
 																																						<a
 																																							ALT=""
@@ -1532,7 +1566,16 @@ export class STEditorialComponent extends Component {
 																																									"block;"
 																																							}}
 																																							TARGET="_blank"
-																																							href="https://lasvegas.showtickets.com/articles/best-vegas-shows-couples/?utm_campaign=best-vegas-shows-couples-read-more&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																																							href={
+																																								store
+																																									.URLs[6]
+																																									.URL +
+																																								"?utm_campaign=" +
+																																								store
+																																									.URLs[6]
+																																									.URLTitle +
+																																								"-read-more&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																							}>
 																																							{" "}
 																																							Read
 																																							more
@@ -1607,11 +1650,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[5]
+																																													.URLs[7]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[5]
+																																													.URLs[7]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1659,14 +1702,14 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[5]
+																																																	.URLs[7]
 																																																	.title
 																																															}
 																																														</strong>
@@ -1700,7 +1743,7 @@ export class STEditorialComponent extends Component {
 																																															}}>
 																																															{
 																																																store
-																																																	.URLs[5]
+																																																	.URLs[7]
 																																																	.subtext
 																																															}
 																																														</span>
@@ -1740,7 +1783,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[5]
+																																													.URLs[7]
 																																													.price
 																																											}
 																																										</strong>
@@ -1755,11 +1798,11 @@ export class STEditorialComponent extends Component {
 																																										<a
 																																											href={
 																																												store
-																																													.URLs[5]
+																																													.URLs[7]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[5]
+																																													.URLs[7]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1801,11 +1844,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[6]
+																																													.URLs[8]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[6]
+																																													.URLs[8]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1853,14 +1896,14 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[6]
+																																																	.URLs[8]
 																																																	.title
 																																															}
 																																														</strong>
@@ -1876,13 +1919,13 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
 																																														{
 																																															store
-																																																.URLs[6]
+																																																.URLs[8]
 																																																.subtext
 																																														}
 																																													</td>
@@ -1902,7 +1945,7 @@ export class STEditorialComponent extends Component {
 																																											fontSize:
 																																												"13px;",
 																																											fontFamily:
-																																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																												"Lato, Arial, Helvetica, sans-serif;",
 																																											fontWeight:
 																																												"normal;",
 																																											textTransform:
@@ -1921,7 +1964,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[6]
+																																													.URLs[8]
 																																													.price
 																																											}
 																																										</strong>
@@ -1938,11 +1981,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[6]
+																																													.URLs[8]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[6]
+																																													.URLs[8]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -1984,11 +2027,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[7]
+																																													.URLs[9]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[7]
+																																													.URLs[9]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2034,14 +2077,14 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[7]
+																																																	.URLs[9]
 																																																	.title
 																																															}
 																																														</strong>
@@ -2075,7 +2118,7 @@ export class STEditorialComponent extends Component {
 																																															}}>
 																																															{
 																																																store
-																																																	.URLs[7]
+																																																	.URLs[9]
 																																																	.subtext
 																																															}
 																																														</span>
@@ -2115,7 +2158,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[7]
+																																													.URLs[9]
 																																													.price
 																																											}
 																																										</strong>
@@ -2131,11 +2174,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[7]
+																																													.URLs[9]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[7]
+																																													.URLs[9]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2205,13 +2248,13 @@ export class STEditorialComponent extends Component {
 																														align="left"
 																														style={{
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial;",
+																																"Lato, Arial;",
 																															fontSize:
-																																"16px;",
+																																"16px",
 																															color:
-																																"#ffffff;",
+																																"#ffffff",
 																															wordWrap:
-																																"break-word;",
+																																"break-word",
 																															textTransform:
 																																"uppercase"
 																														}}
@@ -2271,12 +2314,25 @@ export class STEditorialComponent extends Component {
 																																		<a
 																																			ALT=""
 																																			TARGET="_blank"
-																																			href="https://orlando.showtickets.com/articles/titanic-gala-dinner-show-recommendation/?utm_campaign=titanic-gala-dinner-show-recommendation-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																																			href={
+																																				store
+																																					.URLs[10]
+																																					.URL +
+																																				"?utm_campaign=" +
+																																				store
+																																					.URLs[10]
+																																					.URLTitle +
+																																				"-image&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																			}>
 																																			<img
 																																				alt="titanic-gala-dinner-show-recommendation"
 																																				className="w300"
 																																				height="auto"
-																																				src="images/titanic-gala-dinner-artifact-exhibit-600.jpg"
+																																				src={
+																																					store
+																																						.URLs[10]
+																																						.imageAddress
+																																				}
 																																				style={{
 																																					display:
 																																						"block;",
@@ -2313,23 +2369,18 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"16px;",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal;",
 																																							textTransform:
 																																								"uppercase"
 																																						}}>
 																																						<strong>
-																																							Travel
-																																							Back
-																																							in
-																																							Time:{" "}
-																																							<em>
-																																								Titanic
-																																								Gala
-																																								Dinner
-																																								Show
-																																							</em>
+																																							{
+																																								store
+																																									.URLs[10]
+																																									.title
+																																							}
 																																						</strong>
 																																					</td>
 																																				</tr>
@@ -2343,25 +2394,15 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"13px;",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal"
 																																						}}>
-																																						Climb
-																																						aboard
-																																						a
-																																						replica
-																																						of
-																																						the{" "}
-																																						<em>
-																																							R.M.S.
-																																							Titanic
-																																						</em>{" "}
-																																						for
-																																						a
-																																						night
-																																						to
-																																						remember
+																																						{
+																																							store
+																																								.URLs[10]
+																																								.subtext
+																																						}
 																																						<br />
 																																						<a
 																																							ALT=""
@@ -2377,7 +2418,16 @@ export class STEditorialComponent extends Component {
 																																									"block;"
 																																							}}
 																																							TARGET="_blank"
-																																							href="https://orlando.showtickets.com/articles/titanic-gala-dinner-show-recommendation/?utm_campaign=titanic-gala-dinner-show-recommendation-read-more&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta">
+																																							href={
+																																								store
+																																									.URLs[10]
+																																									.URL +
+																																								"?utm_campaign=" +
+																																								store
+																																									.URLs[10]
+																																									.URLTitle +
+																																								"-read-more&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																							}>
 																																							{" "}
 																																							Read
 																																							more
@@ -2453,11 +2503,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[8]
+																																													.URLs[11]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[8]
+																																													.URLs[11]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2512,7 +2562,7 @@ export class STEditorialComponent extends Component {
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[8]
+																																																	.URLs[11]
 																																																	.title
 																																															}
 																																														</strong>
@@ -2528,13 +2578,13 @@ export class STEditorialComponent extends Component {
 																																															fontSize:
 																																																"13px;",
 																																															fontFamily:
-																																																"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																																"Lato, Arial, Helvetica, sans-serif;",
 																																															fontWeight:
 																																																"normal"
 																																														}}>
 																																														{
 																																															store
-																																																.URLs[8]
+																																																.URLs[11]
 																																																.subtext
 																																														}
 																																													</td>
@@ -2554,7 +2604,7 @@ export class STEditorialComponent extends Component {
 																																											fontSize:
 																																												"13px;",
 																																											fontFamily:
-																																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																												"Lato, Arial, Helvetica, sans-serif;",
 																																											fontWeight:
 																																												"normal;",
 																																											textTransform:
@@ -2573,7 +2623,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[8]
+																																													.URLs[11]
 																																													.price
 																																											}
 																																										</strong>
@@ -2590,11 +2640,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[8]
+																																													.URLs[11]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[8]
+																																													.URLs[11]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2636,11 +2686,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[9]
+																																													.URLs[12]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[9]
+																																													.URLs[12]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2695,7 +2745,7 @@ export class STEditorialComponent extends Component {
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[9]
+																																																	.URLs[12]
 																																																	.title
 																																															}
 																																														</strong>
@@ -2717,7 +2767,7 @@ export class STEditorialComponent extends Component {
 																																														}}>
 																																														{
 																																															store
-																																																.URLs[9]
+																																																.URLs[12]
 																																																.subtext
 																																														}
 																																													</td>
@@ -2756,7 +2806,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[9]
+																																													.URLs[12]
 																																													.price
 																																											}
 																																										</strong>
@@ -2773,11 +2823,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[9]
+																																													.URLs[12]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[9]
+																																													.URLs[12]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2819,11 +2869,11 @@ export class STEditorialComponent extends Component {
 																																											TARGET="_blank"
 																																											href={
 																																												store
-																																													.URLs[10]
+																																													.URLs[13]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[10]
+																																													.URLs[13]
 																																													.URLTitle +
 																																												"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -2878,7 +2928,7 @@ export class STEditorialComponent extends Component {
 																																														<strong>
 																																															{
 																																																store
-																																																	.URLs[10]
+																																																	.URLs[13]
 																																																	.title
 																																															}
 																																														</strong>
@@ -2900,7 +2950,7 @@ export class STEditorialComponent extends Component {
 																																														}}>
 																																														{
 																																															store
-																																																.URLs[10]
+																																																.URLs[13]
 																																																.subtext
 																																														}
 																																													</td>
@@ -2939,7 +2989,7 @@ export class STEditorialComponent extends Component {
 																																											$
 																																											{
 																																												store
-																																													.URLs[10]
+																																													.URLs[13]
 																																													.price
 																																											}
 																																										</strong>
@@ -2956,11 +3006,11 @@ export class STEditorialComponent extends Component {
 																																											ALT=""
 																																											href={
 																																												store
-																																													.URLs[10]
+																																													.URLs[13]
 																																													.URL +
 																																												"?utm_campaign=" +
 																																												store
-																																													.URLs[10]
+																																													.URLs[13]
 																																													.URLTitle +
 																																												"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																											}>
@@ -3155,11 +3205,11 @@ export class STEditorialComponent extends Component {
 																																							TARGET="_blank"
 																																							href={
 																																								store
-																																									.URLs[11]
+																																									.URLs[14]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[11]
+																																									.URLs[14]
 																																									.URLTitle +
 																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3211,7 +3261,7 @@ export class STEditorialComponent extends Component {
 																																										}}>
 																																										{
 																																											store
-																																												.URLs[11]
+																																												.URLs[14]
 																																												.title
 																																										}
 																																									</td>
@@ -3246,7 +3296,7 @@ export class STEditorialComponent extends Component {
 																																							$
 																																							{
 																																								store
-																																									.URLs[11]
+																																									.URLs[14]
 																																									.price
 																																							}
 																																						</strong>
@@ -3273,13 +3323,13 @@ export class STEditorialComponent extends Component {
 																																							}}
 																																							href={
 																																								store
-																																									.URLs[11]
+																																									.URLs[14]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[11]
+																																									.URLs[14]
 																																									.URLTitle +
-																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
+																																								"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
 																																							Buy
 																																							Tickets
@@ -3311,11 +3361,11 @@ export class STEditorialComponent extends Component {
 																																							TARGET="_blank"
 																																							href={
 																																								store
-																																									.URLs[12]
+																																									.URLs[15]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[12]
+																																									.URLs[15]
 																																									.URLTitle +
 																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3361,13 +3411,13 @@ export class STEditorialComponent extends Component {
 																																											fontSize:
 																																												"13px;",
 																																											fontFamily:
-																																												"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																												"Lato, Arial, Helvetica, sans-serif;",
 																																											fontWeight:
 																																												"normal"
 																																										}}>
 																																										{
 																																											store
-																																												.URLs[12]
+																																												.URLs[15]
 																																												.title
 																																										}
 																																									</td>
@@ -3385,7 +3435,7 @@ export class STEditorialComponent extends Component {
 																																							fontSize:
 																																								"13px;",
 																																							fontFamily:
-																																								"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																								"Lato, Arial, Helvetica, sans-serif;",
 																																							fontWeight:
 																																								"normal;",
 																																							textTransform:
@@ -3402,7 +3452,7 @@ export class STEditorialComponent extends Component {
 																																							$
 																																							{
 																																								store
-																																									.URLs[12]
+																																									.URLs[15]
 																																									.price
 																																							}
 																																						</strong>{" "}
@@ -3418,7 +3468,7 @@ export class STEditorialComponent extends Component {
 																																								fontSize:
 																																									"13px;",
 																																								fontFamily:
-																																									"&#39;Lato&#39;, Arial, Helvetica, sans-serif;",
+																																									"Lato, Arial, Helvetica, sans-serif;",
 																																								fontWeight:
 																																									"normal;",
 																																								textTransform:
@@ -3428,11 +3478,11 @@ export class STEditorialComponent extends Component {
 																																							}}
 																																							href={
 																																								store
-																																									.URLs[12]
+																																									.URLs[15]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[12]
+																																									.URLs[15]
 																																									.URLTitle +
 																																								"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3486,11 +3536,11 @@ export class STEditorialComponent extends Component {
 																																							TARGET="_blank"
 																																							href={
 																																								store
-																																									.URLs[13]
+																																									.URLs[16]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[13]
+																																									.URLs[16]
 																																									.URLTitle +
 																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3542,7 +3592,7 @@ export class STEditorialComponent extends Component {
 																																										}}>
 																																										{
 																																											store
-																																												.URLs[13]
+																																												.URLs[16]
 																																												.title
 																																										}
 																																									</td>
@@ -3577,7 +3627,7 @@ export class STEditorialComponent extends Component {
 																																							$
 																																							{
 																																								store
-																																									.URLs[13]
+																																									.URLs[16]
 																																									.price
 																																							}
 																																						</strong>
@@ -3603,11 +3653,11 @@ export class STEditorialComponent extends Component {
 																																							}}
 																																							href={
 																																								store
-																																									.URLs[13]
+																																									.URLs[16]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[13]
+																																									.URLs[16]
 																																									.URLTitle +
 																																								"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3641,11 +3691,11 @@ export class STEditorialComponent extends Component {
 																																							TARGET="_blank"
 																																							href={
 																																								store
-																																									.URLs[14]
+																																									.URLs[17]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[14]
+																																									.URLs[17]
 																																									.URLTitle +
 																																								"-img&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3697,7 +3747,7 @@ export class STEditorialComponent extends Component {
 																																										}}>
 																																										{
 																																											store
-																																												.URLs[14]
+																																												.URLs[17]
 																																												.title
 																																										}
 																																									</td>
@@ -3732,7 +3782,7 @@ export class STEditorialComponent extends Component {
 																																							$
 																																							{
 																																								store
-																																									.URLs[14]
+																																									.URLs[17]
 																																									.price
 																																							}
 																																						</strong>
@@ -3758,11 +3808,11 @@ export class STEditorialComponent extends Component {
 																																							}}
 																																							href={
 																																								store
-																																									.URLs[14]
+																																									.URLs[17]
 																																									.URL +
 																																								"?utm_campaign=" +
 																																								store
-																																									.URLs[14]
+																																									.URLs[17]
 																																									.URLTitle +
 																																								"-btn&aff=ST2543dc&utm_source=Email&utm_medium=<DI_TRACKING_CODE/>&conv_source=zeta"
 																																							}>
@@ -3830,7 +3880,7 @@ export class STEditorialComponent extends Component {
 																														className="reverse"
 																														style={{
 																															fontFamily:
-																																"&#39;Lato&#39;, Arial;",
+																																"Lato, Arial;",
 																															fontSize:
 																																"20px;",
 																															color:

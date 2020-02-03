@@ -32,7 +32,27 @@ export class Submit extends React.Component {
 		}
 	};
 
-	scrapeWebPage = async (e, subtextFunction) => {
+	editURLTitle = URLTitle => {
+		if (URLTitle.includes("™")) {
+			URLTitle = URLTitle.replace("™", "-");
+		}
+		if (URLTitle.includes("©")) {
+			URLTitle = URLTitle.replace("©", "-");
+		}
+		if (URLTitle.includes("℗")) {
+			URLTitle = URLTitle.replace("℗", "-");
+		}
+		if (URLTitle.includes("®")) {
+			URLTitle = URLTitle.replace("®", "-");
+		}
+		if (URLTitle.includes('"')) {
+			URLTitle = URLTitle.replace('"', "-");
+		}
+
+		return URLTitle;
+	};
+
+	scrapeWebPage = async (e, subtextFunction, editURLTitle) => {
 		let webScrapeObject = {};
 		return await fetch(e.target.value)
 			.then(response => {
@@ -50,7 +70,8 @@ export class Submit extends React.Component {
 				webScrapeObject.title = title;
 
 				// Adjust title in URL Google Analytics UTM tracking campaigns.
-				let URLTitle = title.replace(/ /g, "-");
+				let URLTitle = this.editURLTitle(title.replace(/ /g, "-"));
+				//let URLTitle = this.editURLTitle(AlmostURLTitle);
 				webScrapeObject.URLTitle = URLTitle;
 
 				let regex = new RegExp('<span class="h5 promo-text semi-bold orange">(.*)</span>', "s");
@@ -67,6 +88,7 @@ export class Submit extends React.Component {
 
 				webScrapeObject.imageAddress = "https://via.placeholder.com/300x140";
 				console.log(webScrapeObject);
+
 				return webScrapeObject;
 			});
 	};
@@ -91,7 +113,7 @@ export class Submit extends React.Component {
 												<input
 													type="text"
 													className="form-control"
-													id="blog"
+													id="hero"
 													placeholder="URL for Blog Article Feature"
 													onChange={e => {
 														e.persist(

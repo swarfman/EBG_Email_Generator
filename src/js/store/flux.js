@@ -12,7 +12,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			STEmails: [{}]
 		},
 		actions: {
-			pushProductObjectToStore: e => {
+			pushWebObjectToStore: e => {
 				var tempStore = getStore();
 				let landingPageInformation = {};
 				landingPageInformation = e;
